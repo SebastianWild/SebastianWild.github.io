@@ -1,0 +1,669 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- begin _includes/seo.html --><title>Running Jekyll with Docker - The Start of a Blog</title>
+<meta name="description" content="I share how to set up a local Jekyll development environment using Docker.">
+
+
+  <meta name="author" content="Sebastian Wild">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Start of a Blog">
+<meta property="og:title" content="Running Jekyll with Docker">
+<meta property="og:url" content="http://0.0.0.0:4000/self-hosting/local-jekyll/">
+
+
+  <meta property="og:description" content="I share how to set up a local Jekyll development environment using Docker.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-07-19T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/self-hosting/local-jekyll/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sebastian Wild",
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Start of a Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/mmistakes_light.css" id="sheet_light">
+<link rel="stylesheet" href="/assets/css/mmistakes_dark.css" id="sheet_dark" media="none">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+  
+    <script src="/assets/js/themeswitch.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="theme--light layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          The Start of a Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/about/me_small.jpg" alt="Sebastian Wild" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sebastian Wild</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Enthusiast of all things 📲, 🏍, 🚲, ⛰, and ⛷</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">SF Bay Area</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Running Jekyll with Docker">
+    <meta itemprop="description" content="I share how to set up a local Jekyll development environment using Docker.">
+    <meta itemprop="datePublished" content="July 19, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Running Jekyll with Docker
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><strong>TL;DR</strong> I share how to create a highly portable jekyll development environment. <code class="language-plaintext highlighter-rouge">git-clone</code> your website repository and run <code class="language-plaintext highlighter-rouge">docker-compose up</code> 🚀</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Normally, Jekyll requires a full Ruby development environment. This isn’t hard to setup, and the steps are described <a href="https://jekyllrb.com/docs/">here</a>. This is fine and good, but I wanted a fully portable environment without having to install Ruby or Bundler. For this I thought <a href="https://www.docker.com">Docker</a> is a good solution. This way, the only thing that needs to be installed wherever I am working on the site is Docker itself.</p>
+
+<h2 id="docker">Docker</h2>
+
+<p>Docker is a platform that uses virtualization to deliver software in packages called containers. These containers are significantly more lightweight than full-blown virtual machines, as <a href="https://en.wikipedia.org/wiki/OS-level_virtualization">OS-level virtualization</a> is used.</p>
+
+<h2 id="docker-compose">docker-compose</h2>
+
+<p><code class="language-plaintext highlighter-rouge">docker-compose</code> is a command-line utility to work with <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> files. Docker compose can be used to quickly define and run multi-container Docker applications with a single command and configuration file. A <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file contains everything from image configuration, network configuration, and commands to run when the containers start.</p>
+
+<p>Read more <a href="https://docs.docker.com/compose/">here</a>.</p>
+
+<h2 id="jekyll-docker-compose">Jekyll docker-compose</h2>
+
+<p>For my personal site, I want a local development environment that is highly portable - ideally as easy as <code class="language-plaintext highlighter-rouge">git clone</code>-ing the repository and running <code class="language-plaintext highlighter-rouge">docker-compose up</code>. That’s exactly what the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file below does 👍.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>                        <span class="c1"># docker-compose file format. Ex. 1, 2, or 3.</span>
+                                    <span class="c1"># Different versions work with different versions of Docker, and support different features</span>
+
+<span class="na">services</span><span class="pi">:</span>                           <span class="c1"># Configs for the various services, we just have one</span>
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">jekyll/jekyll:latest</span>     <span class="c1"># Image name to pull from Docker Hub</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll serve --livereload</span>     <span class="c1"># Command to run when the container starts</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">4000:4000</span>                   <span class="c1"># Map local port 4000 to port 4000 in the container</span>
+      <span class="pi">-</span> <span class="s">35729:35729</span>                 <span class="c1"># We need to specify another port for the Jekyll 3.70+ live reload feature</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./src:/srv/jekyll</span>           <span class="c1"># Mount a volume so the container can access local data in the src directory</span>
+</code></pre></div></div>
+
+<p>Let’s break down the compose file.</p>
+
+<ul>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">services</code> mapping is where we define our containers. In YAML, a mapping is basically a collection of key:value pairs. We can call each container what we’d like, and in this case we only have one - “jekyll”</p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">image</code> entry tells Docker what image to use. We could roll our own with a <code class="language-plaintext highlighter-rouge">Dockerfile</code>, but there is a nice official Jekyll image available in <a href="https://hub.docker.com/r/jekyll/jekyll/">Docker Hub</a> that we can use.</p>
+  </li>
+  <li>
+    <p>With the <code class="language-plaintext highlighter-rouge">command</code> entry, we can override the default command in the image.</p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">ports</code> sequence defines what ports to hook up from the container. The bundled web server in the image listens on port 4000, so we map this to our machine’s port 4000. We could choose a different one, ex: <code class="language-plaintext highlighter-rouge">3999:4000</code></p>
+  </li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">volumes</code> sequence defines what persistent data to connect to the container and where to mount it. In this case, I have my Jekyll source files in the <code class="language-plaintext highlighter-rouge">src</code> subdirectory.</p>
+  </li>
+</ul>
+
+<p>Let’s look at the <code class="language-plaintext highlighter-rouge">command</code> entry a little more closely. We can see that it passing some arguments to the jekyll command line tool:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">serve</code> builds your site and serves it locally using bundled web server.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">--livereload</code> is very cool, it reloads your browser window when you make changes to your source files. Very handy for development.</p>
+  </li>
+</ul>
+
+<h3 id="livereload">Livereload</h3>
+
+<p>Introduced with Jekyll 3.7.0, this feature will auto re-generate the pages corresponding with your edits, and trigger your browser window to refresh (should you be previewing the site). Without this, you would have to use the <code class="language-plaintext highlighter-rouge">--watch</code> option and manually refresh the browser page to get the latest changes - but that’s one more click and you have to switch focus to your browser 😛 One thing to note though, at least on Safari I’ve found that when the page refreshes there’s a good chance that you lose your scroll position.</p>
+
+<p>Also note that this feature works by injecting a new JavaScript file, <code class="language-plaintext highlighter-rouge">livereload.js</code>. This file listens for messages on port 35729, and will refresh the page when Jekyll re-generates a file. This is why we have to specify an extra port in our compose file.</p>
+
+<h2 id="workflow">Workflow</h2>
+
+<p>Typically when working on the site, I will have an editor (VS Code for me), and a browser pointing to <code class="language-plaintext highlighter-rouge">localhost:4000</code> side by side. Starting work on the site is as simple as running <code class="language-plaintext highlighter-rouge">docker-compose up</code> 👍</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/LocalJekyll_SideBySide_Dev.jpg" alt="VS Code and Jekyll served locally side by side" />
+  </figure>
+
+<h2 id="closing-remarks">Closing Remarks</h2>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">jekyll serve</code> is only meant for use for development purposes. The web server that it uses is not meant to handle multiple incoming requests, and should really not be used in production. For deployment, I’d recommend running <code class="language-plaintext highlighter-rouge">jekyll build</code> and using a proper web server like NGINX or Apache to serve the site. I’ll have another post about this soon 😀</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#docker" class="page__taxonomy-item" rel="tag">Docker</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">Jekyll</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-19T00:00:00-05:00">July 19, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Running+Jekyll+with+Docker%20http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Flocal-jekyll%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Flocal-jekyll%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Flocal-jekyll%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/motorcycle/cam-chain-tensioner/" class="pagination--pager" title="Engine Noise? Might want to check your timing chain tensioner!
+">Previous</a>
+    
+    
+      <a href="/self-hosting/jekyll-blog-workflow/" class="pagination--pager" title="My Jekyll Workflow
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/motorcycle/chain-sprocket-swap/" rel="permalink">390 Duke Chain and Sprocket Swap
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Documenting my recent chain and sprocket swap
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-jekyll-build-deploy-action/" rel="permalink">Setting up Automatic Build &amp; Deploy of a Jekyll Blog
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-spellcheck-lint-action/" rel="permalink">Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/jekyll-blog-workflow/" rel="permalink">My Jekyll Workflow
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A look at my Jekyll blogging workflow 📝
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Sebastian Wild. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

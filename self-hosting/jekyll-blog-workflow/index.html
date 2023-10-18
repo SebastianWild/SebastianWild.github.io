@@ -1,0 +1,939 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- begin _includes/seo.html --><title>My Jekyll Workflow - The Start of a Blog</title>
+<meta name="description" content="A look at my Jekyll blogging workflow 📝">
+
+
+  <meta name="author" content="Sebastian Wild">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Start of a Blog">
+<meta property="og:title" content="My Jekyll Workflow">
+<meta property="og:url" content="http://0.0.0.0:4000/self-hosting/jekyll-blog-workflow/">
+
+
+  <meta property="og:description" content="A look at my Jekyll blogging workflow 📝">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-08-19T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/self-hosting/jekyll-blog-workflow/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sebastian Wild",
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Start of a Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/mmistakes_light.css" id="sheet_light">
+<link rel="stylesheet" href="/assets/css/mmistakes_dark.css" id="sheet_dark" media="none">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+  
+    <script src="/assets/js/themeswitch.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="theme--light layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          The Start of a Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/about/me_small.jpg" alt="Sebastian Wild" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sebastian Wild</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Enthusiast of all things 📲, 🏍, 🚲, ⛰, and ⛷</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">SF Bay Area</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="My Jekyll Workflow">
+    <meta itemprop="description" content="A look at my Jekyll blogging workflow 📝">
+    <meta itemprop="datePublished" content="August 19, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">My Jekyll Workflow
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><strong>TL;DR</strong> Any text editor + some GitHub branches tied together with GitHub Actions</p>
+
+<p>In the <a href="/self-hosting/local-jekyll/">previous</a> post, I described how to set up a local development environment for your Jekyll-powered site using Docker, including live reload. The <code class="language-plaintext highlighter-rouge">jekyll serve</code> command is really helpful here because it lets us easily spin up a local web server to test our site - but this isn’t meant for production. To do it properly, we need to use a fully featured web server. However, I wanted to do more than just that - I wanted an end to end development &amp; deployment pipeline:</p>
+
+<table class="td-like-ol">
+  <tbody>
+    <tr>
+      <td><strong>•</strong> A fully portable development environment (using Docker)</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><strong>•</strong> Hassle-free setup for the live site on a VPS/cloud server</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><strong>•</strong> Automated linting</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><strong>•</strong> Automated spellcheck</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td><strong>•</strong> Automated site build &amp; deploy to live web server</td>
+      <td>✅</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="workflow">Workflow</h2>
+
+<p>The diagram below shows how I work on the site and what happens at each stage of the process. In this post I will talk a little about each, but deep-dive posts on the individual GitHub Actions used will be reserved for some additional posts 👍</p>
+
+<svg class="adaptive-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-0.5 -0.5 702 228">
+  <rect x="0" y="106" width="80" height="40" fill="none" pointer-events="all"/>
+  <path d="M 46.25 143.48 C 47.02 143.48 47.56 143.23 47.41 143.03 L 45.88 141.13 C 45.68 140.84 45.41 140.78 44.96 140.78 L 35.04 140.78 C 34.56 140.78 34.32 140.85 34.08 141.14 L 32.66 143.02 C 32.39 143.32 33.21 143.48 33.81 143.48 Z M 69.4 137.3 L 69.4 109.48 L 10.56 109.48 L 10.56 137.3 Z M 4.14 146 C 2.57 145.99 1.17 145.55 0.58 144.86 C 0 144.19 0.23 143.52 0.73 143.06 L 6.43 138.17 L 6.43 109.33 C 6.43 107.88 7.97 106 10.53 106 L 69.42 106 C 71.41 106 73.53 107.34 73.53 109.51 L 73.53 138.17 L 79.28 143.1 C 79.77 143.57 80 144.18 79.42 144.84 C 78.66 145.68 77.23 145.94 75.88 146 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <path d="M 80 126 L 123.63 126" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 128.88 126 L 121.88 129.5 L 123.63 126 L 121.88 122.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <rect class="adaptive-svg-rect" x="130" y="56" width="380" height="136" fill="none" stroke="#000000" pointer-events="all"/>
+  <rect x="130" y="192" width="68" height="34" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 66px; height: 1px; padding-top: 209px; margin-left: 131px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">GitHub</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="164" y="213" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">GitHub</text>
+  </switch>
+  <rect x="198" y="56" width="272" height="34" fill="none" pointer-events="all"/>
+  <path d="M 198 56 M 470 56 M 470 90 L 198 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 270px; height: 1px; padding-top: 87px; margin-left: 199px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">master</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="334" y="87" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">master</text>
+  </switch>
+  <path d="M 130 90 Q 140 90 164 90 Q 188 90 198.33 89.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <rect x="189.5" y="90" width="229.5" height="34" fill="none" pointer-events="all"/>
+  <path d="M 189.5 90 M 419 90 M 419 124 L 189.5 124" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 227px; height: 1px; padding-top: 121px; margin-left: 191px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">staging</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="304" y="121" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">staging</text>
+  </switch>
+  <path d="M 130 90 Q 140 90 159.75 107 Q 179.5 124 189.17 123.83" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <rect x="232" y="124" width="136" height="34" fill="none" pointer-events="all"/>
+  <path d="M 232 124 M 368 124 M 368 158 L 232 158" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 155px; margin-left: 233px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">post/draft##</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="300" y="155" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">post/draft##</text>
+  </switch>
+  <path d="M 189.5 124 Q 199.5 124 210.75 141 Q 222 158 231.67 158" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 419 124 Q 429 124 444.5 107 Q 460 90 470 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 107px; margin-left: 460px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 11px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: nowrap;"> ✅</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="460" y="111" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle"> ✅</text>
+  </switch>
+  <path d="M 368 158 Q 378 158 393.5 141 Q 409 124 419 124" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 142px; margin-left: 410px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 11px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: nowrap;"> ✅</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="410" y="145" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle"> ✅</text>
+  </switch>
+  <path d="M 419 124 L 480.63 124" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 485.88 124 L 478.88 127.5 L 480.63 124 L 478.88 120.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <path d="M 453 90 L 480.45 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 485.7 90 L 478.7 93.5 L 480.45 90 L 478.7 86.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <rect x="410" y="146" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 159px; margin-left: 411px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">3.</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="430" y="162" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">3.</text>
+  </switch>
+  <path d="M 510 90 L 591.03 50.3" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 595.75 47.99 L 591 54.21 L 591.03 50.3 L 587.92 47.93 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <path d="M 590 146 C 566 146 560 166 579.2 170 C 560 178.8 581.6 198 597.2 190 C 608 206 644 206 656 190 C 680 190 680 174 665 166 C 680 150 656 134 635 142 C 620 130 596 130 590 146 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 166px; margin-left: 561px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Cloudflare</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="620" y="170" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">Cloudflare</text>
+  </switch>
+  <path d="M 510 90 L 584.78 142.35" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+  <path d="M 589.08 145.36 L 581.34 144.21 L 584.78 142.35 L 585.36 138.48 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <rect x="530" y="31" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 44px; margin-left: 531px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">deploy w/SSH</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="550" y="47" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">deploy...</text>
+  </switch>
+  <rect x="530" y="128.5" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 531px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">purge cache</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="550" y="145" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">purge c...</text>
+  </switch>
+  <rect x="90" y="128.5" width="30" height="10" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 134px; margin-left: 91px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">push</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="105" y="137" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">push</text>
+  </switch>
+  <path d="M 600 0 L 700 0 L 700 97 L 600 97 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+  <path d="M 609.01 12.33 L 609.01 13.08 L 615.99 13.08 L 615.99 12.33 Z M 609.01 9.28 L 609.01 10.03 L 615.99 10.03 L 615.99 9.28 Z M 609.01 6.24 L 609.01 6.99 L 615.99 6.99 L 615.99 6.24 Z M 607.64 3.73 C 607.43 3.73 607.27 3.9 607.27 4.11 L 607.27 21.5 C 607.27 21.7 607.43 21.87 607.64 21.87 L 617.37 21.87 C 617.58 21.87 617.75 21.7 617.75 21.5 L 617.75 4.11 C 617.75 3.9 617.58 3.73 617.37 3.73 Z M 608.02 4.48 L 617 4.48 L 617 21.12 L 608.02 21.12 Z M 600 25 L 600 0 L 625 0 L 625 25 Z" fill="#000000" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 68px; height: 1px; padding-top: 7px; margin-left: 632px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: left;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+            <font>Docker<br/>Traefik<br/>NGINX<br/></font>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="632" y="19" fill="#000000" font-family="Helvetica" font-size="12px">Docker...</text>
+  </switch>
+  <rect x="610" y="72" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 85px; margin-left: 611px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+            <i>swild.dev</i>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="630" y="88" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">swild.d...</text>
+  </switch>
+  <rect x="130" y="26" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 39px; margin-left: 131px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">2.</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="150" y="42" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">2.</text>
+  </switch>
+  <rect x="20" y="72" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 85px; margin-left: 21px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">1.</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="40" y="88" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">1.</text>
+  </switch>
+  <rect x="490" y="6" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 19px; margin-left: 491px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">4.</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="510" y="22" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">4.</text>
+  </switch>
+  <rect x="520" y="153.5" width="40" height="25" fill="none" pointer-events="all"/>
+  <switch transform="translate(-0.5 -0.5)">
+    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+      <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 166px; margin-left: 521px;">
+        <div style="box-sizing: border-box; font-size: 0; text-align: center;">
+          <div style="display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">5.</div>
+        </div>
+      </div>
+    </foreignObject>
+    <text x="540" y="170" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">5.</text>
+  </switch>
+  <switch>
+    <a transform="translate(0,-5)" href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+      <text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>
+
+<p>The diagram shows some key concepts important to me:</p>
+
+<ol>
+  <li>Write anywhere</li>
+  <li>Robust version control strategy</li>
+  <li>Robust automation</li>
+</ol>
+
+<h2 id="1-write-anywhere">1. Write Anywhere</h2>
+
+<p>While I typically do development work on my Mac, one of my goals was to make working on the site as easy as possible, and with the least amount of setup involved. Ideally using just a text editor and git. Building the site as well as deployment should be done by the CI/CD pipeline - so that I could for example use something like an iPad on the go. Of course a Ruby or Docker environment is needed for previewing the site locally, but for simply writing content I wanted to be able to use a tablet or phone on the go as well.</p>
+
+<p>On my iPad, I use the following apps to develop the site on the go:</p>
+
+<ul>
+  <li><a href="https://www.textasticapp.com">Textastic</a> - I like this text editor as it features syntax highlighting and easy integration with Working Copy as well as Files.app</li>
+  <li><a href="https://workingcopyapp.com">Working Copy</a> - Definitively not cheap, but a really good git client for iOS</li>
+  <li><a href="https://termius.com">Terminus</a> - Great SSH client for iOS &amp; Android. The free version suits my basic SSH needs quite well</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/textastic_ipad.jpeg" alt="Textastic on iPad" />
+  
+    <figcaption>
+      Working on an iPad with an keyboard &amp; trackpad (thanks iOS 13.5 😀)
+
+    </figcaption></figure>
+
+<p>On my Mac, my go-to editor of choice is VS Code. Here are some handy extensions that made working on the site easier for me:</p>
+
+<ul>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a> - Adds a host of extra git features, such as per-line <code class="language-plaintext highlighter-rouge">git blame</code> in the file you’re currently editing</li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">markdownlint</a> - Integrates MarkdownLint right into the editor, highlighting violations as you edit</li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">Draw.io Integration</a> - Lets you edit draw.io files right in VS Code</li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker">Docker</a> - Adds a slew of Docker integrations for editing Dockerfiles and managing containers</li>
+</ul>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/vscode_drawio.png" alt="VS Code with integrated draw.io" />
+  
+    <figcaption>
+      The draw.io (diagrams.net) extension for VS Code is pretty neat!
+
+    </figcaption></figure>
+
+<h2 id="2-github-workflow">2. GitHub Workflow</h2>
+
+<p>A robust branching strategy is always a good thing in any repository. There’s tons of different approaches out there, but in general you want a strategy that allows you to work on features, bugfixes, and other things in isolation and without tripping over all the changes you are making in parallel. This means for example not pushing to master for everything but using feature branches. The strategy I’m following for the blog goes as follows:</p>
+
+<h3 id="master-branch">master branch</h3>
+
+<p><code class="language-plaintext highlighter-rouge">master</code> is always the current live version of the site. This way if there hotfixes that need to be made, I can branch off of <code class="language-plaintext highlighter-rouge">master</code>, fix the issue and open a pull request back into <code class="language-plaintext highlighter-rouge">master</code>. GitHub Action build &amp; deploy the site on push to this branch.</p>
+
+<h3 id="staging-branch">staging branch</h3>
+
+<p><code class="language-plaintext highlighter-rouge">staging</code> contains all the changes meant to go live in the next deploy. While I’m not using tags or versioning right now, <code class="language-plaintext highlighter-rouge">staging</code> serves as the branch to contain all the changes that I want to deploy to the site in one go.</p>
+
+<h3 id="feature-branches">feature branches</h3>
+
+<p>Drafts for new posts, site features, and really anything else besides hotfixes are made in their own feature branches, typically created off of <code class="language-plaintext highlighter-rouge">staging</code>. It’s good practice to have your feature branches be about one change, and one change only. Overcome the urge to work on multiple things in one feature branch. This might complicate the pull request once you’re done and make code review more difficult. This is not super applicable here as I am working on the site by myself, but is important when you are working in a team.</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/github_branches.png" alt="A look at some GitHub branches illustrating the workflow" />
+  
+    <figcaption>
+      GitHub branch setup with feature branches, pull requests, and checks.
+
+    </figcaption></figure>
+
+<h2 id="3-github-actions">3. GitHub Actions</h2>
+
+<p>In August 2019, GitHub Actions gained CI/CD ability. What’s very cool about this is that if you want CI/CD for your project you no longer have to use a third party service. No more authorizing that third party to access your repositories - everything can now be done right within GitHub itself. This project was my first exposure to GitHub Actions and setting up some workflows.</p>
+
+<p>For me, I wanted three main checks:</p>
+
+<ul>
+  <li>Check if the site builds with <code class="language-plaintext highlighter-rouge">jekyll build</code></li>
+  <li>Check for linter violations using MarkdownLint</li>
+  <li>Check for spelling errors</li>
+</ul>
+
+<p>These checks (with the exception of the deploy action), will happen on every pull request.
+I also wanted the site to be deployed to production on push to <code class="language-plaintext highlighter-rouge">master</code>. All of the above checks as well as the deploy are implemented with individual workflows, and I will go into each in the posts to follow 👍</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/github_actions_checks.png" alt="Image of GitHub Actions running for a pull request." />
+  
+    <figcaption>
+      Checks run on every pull request, and are required to pass before merging.
+
+    </figcaption></figure>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#ci-cd" class="page__taxonomy-item" rel="tag">CI/CD</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#docker" class="page__taxonomy-item" rel="tag">Docker</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-08-19T00:00:00-05:00">August 19, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=My+Jekyll+Workflow%20http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fjekyll-blog-workflow%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fjekyll-blog-workflow%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fjekyll-blog-workflow%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/self-hosting/local-jekyll/" class="pagination--pager" title="Running Jekyll with Docker
+">Previous</a>
+    
+    
+      <a href="/self-hosting/github-spellcheck-lint-action/" class="pagination--pager" title="Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/motorcycle/chain-sprocket-swap/" rel="permalink">390 Duke Chain and Sprocket Swap
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Documenting my recent chain and sprocket swap
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-jekyll-build-deploy-action/" rel="permalink">Setting up Automatic Build &amp; Deploy of a Jekyll Blog
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-spellcheck-lint-action/" rel="permalink">Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/local-jekyll/" rel="permalink">Running Jekyll with Docker
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I share how to set up a local Jekyll development environment using Docker.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Sebastian Wild. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

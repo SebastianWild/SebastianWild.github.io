@@ -1,0 +1,761 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- begin _includes/seo.html --><title>Setting up Automatic Build &amp; Deploy of a Jekyll Blog - The Start of a Blog</title>
+<meta name="description" content="How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀">
+
+
+  <meta name="author" content="Sebastian Wild">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Start of a Blog">
+<meta property="og:title" content="Setting up Automatic Build &amp; Deploy of a Jekyll Blog">
+<meta property="og:url" content="http://0.0.0.0:4000/self-hosting/github-jekyll-build-deploy-action/">
+
+
+  <meta property="og:description" content="How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-08-22T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/self-hosting/github-jekyll-build-deploy-action/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sebastian Wild",
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Start of a Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/mmistakes_light.css" id="sheet_light">
+<link rel="stylesheet" href="/assets/css/mmistakes_dark.css" id="sheet_dark" media="none">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+  
+    <script src="/assets/js/themeswitch.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="theme--light layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          The Start of a Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/about/me_small.jpg" alt="Sebastian Wild" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sebastian Wild</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Enthusiast of all things 📲, 🏍, 🚲, ⛰, and ⛷</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">SF Bay Area</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Setting up Automatic Build &amp; Deploy of a Jekyll Blog">
+    <meta itemprop="description" content="How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀">
+    <meta itemprop="datePublished" content="August 22, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Setting up Automatic Build &amp; Deploy of a Jekyll Blog
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>In the previous <a href="/self-hosting/github-spellcheck-lint-action/">post</a> I demonstrated how to set up a spellcheck &amp; lint action for a Jekyll powered site. The final piece in our GitHub actions automation puzzle is to build &amp; deploy the site without having to do anything manually. The goal is to create the following actions:</p>
+
+<ul>
+  <li>On every pull request, run a <code class="language-plaintext highlighter-rouge">jekyll build</code> to assert that the site can be build successfully ✅</li>
+  <li>On every push to master, run <code class="language-plaintext highlighter-rouge">jekyll build</code> to produce the static site 📦</li>
+  <li>On every push to master, deploy the site using SSH 🚀</li>
+  <li>On every push to master, purge the Cloudflare cache 💨</li>
+</ul>
+
+<p>Just as before, I will be using GitHub actions.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>As of the time of writing, my blog is hosted on a web server controlled entirely by me. This means that deploying the site is as easy as copying files over SSH. Your setup may vary (and mine will certainly change as well - I always have plans for improvement 😀). You don’t have to do it the same way I do, here are some alternative ways to host a Jekyll site:</p>
+
+<ul>
+  <li>Amazon S3 (probably the cheapest for low traffic blogs)</li>
+  <li>GitHub Pages (low entry barrier, very solid GitHub integration)</li>
+  <li><a href="https://jekyllthemes.io/resources/jekyll-hosting-and-cms-solutions">Other platforms</a></li>
+</ul>
+
+<p>For me this blog is more of a fun learning experience so I will go the 100% manual way. Of course manual does not mean repetitive, the goal still is to automate as much as possible. I just also want to write as much automation myself as is worthwhile 😛</p>
+
+<p>Let’s get to it!</p>
+
+<h2 id="build-action">Build Action</h2>
+
+<p>The goal of this workflow is to build the Jekyll site, just to see if it’s successful or not. We will take care of the actual deployment in a later action, only to be performed when pushing to the <code class="language-plaintext highlighter-rouge">master</code> branch. However it is still worthwhile to run a <code class="language-plaintext highlighter-rouge">jekyll build</code> to ensure that the site can be built, and that Jekyll does not error out. This way we can ensure that code that is merged to <code class="language-plaintext highlighter-rouge">staging</code> or <code class="language-plaintext highlighter-rouge">master</code> will actually result in a site that at least compiles 😛</p>
+
+<p>Let’s take a look at the code:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Build</span>
+
+<span class="c1"># Controls when the action will run. Triggers the workflow on push or pull request</span>
+<span class="c1"># events but only for the master branch</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+
+<span class="c1"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">SebasWild/jekyll-build-action@445d650279c45fd66c59ddd38620ddb30fceaedf</span>
+</code></pre></div></div>
+
+<p>Just like the last lint action, this one is pretty simple. Originally I was using Jerry van Leeuwen’s <a href="jekyll-build-action">jekyll-build-action</a>, but I got some errors downloading the Ruby gems the site requires, so I forked the repository and modified the base docker image it used from the latest version of Jekyll to Jekyll 3.</p>
+
+<h2 id="deploy-action">Deploy Action</h2>
+
+<p>Arguable the most complex action (comparatively) for my blog is the <code class="language-plaintext highlighter-rouge">deploy</code> action, since it runs through several steps:</p>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">jekyll build</code></li>
+  <li>SSH into the server &amp; copy the generated files</li>
+  <li>Purge Cloudflare cache</li>
+</ul>
+
+<p>This action took a bit of tweaking to get right, especially narrowing down the parameters required to correctly <code class="language-plaintext highlighter-rouge">rsync</code> all the files over to the server. Here’s the code:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Deploy</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">master</span> <span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">Build and deploy Jekyll Site</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">SebasWild/jekyll-build-action@445d650279c45fd66c59ddd38620ddb30fceaedf</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy to Server</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">easingthemes/ssh-deploy@v2.1.1</span>
+      <span class="na">env</span><span class="pi">:</span>
+        <span class="na">SSH_PRIVATE_KEY</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">ARGS</span><span class="pi">:</span> <span class="s2">"</span><span class="s">-rzv</span><span class="nv"> </span><span class="s">--delete</span><span class="nv"> </span><span class="s">--delete-excluded</span><span class="nv"> </span><span class="s">--chmod=g+rwx"</span>
+        <span class="na">SOURCE</span><span class="pi">:</span> <span class="s2">"</span><span class="s">./_site/"</span>
+        <span class="na">REMOTE_HOST</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">REMOTE_USER</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">TARGET</span><span class="pi">:</span> <span class="s">$</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Purge Cloudflare Cache</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">jakejarvis/cloudflare-purge-action@v0.3.0</span>
+      <span class="na">env</span><span class="pi">:</span>
+        <span class="na">CLOUDFLARE_ZONE</span><span class="pi">:</span> <span class="s">$</span>
+        <span class="na">CLOUDFLARE_TOKEN</span><span class="pi">:</span> <span class="s">$</span>
+</code></pre></div></div>
+
+<h3 id="copy-phase">Copy phase</h3>
+
+<p>The first two workflow steps are the same as for the aforementioned build action - after that it gets more interesting. I use Dragan Filipović’s <a href="https://github.com/easingthemes/ssh-deploy">ssh-deploy</a> which uses NodeJS to ssh and <code class="language-plaintext highlighter-rouge">rsync</code> the built jekyll site files to my server. Notable here is the use of secrets - you definitively do not want to expose vital things like SSH keys to your server by having them in the code.</p>
+
+<p>Instead of username/password authentication, it’s generally always recommended to use SSH keys (with a passphrase protected private key) with your server refusing password logons. This way you can only log on if you posses your private key and the server knows your public key. It can also be more convenient than username + password logon on since private keys do not necessarily have to be encrypted with a passphrase, so you could log on without typing anything in at all.</p>
+
+<p>I make use of the above by storing such a private key in a GitHub secret - this SSH key allows the build action to log on to the server using a limited account with access only to the directory where the static files reside. Secrets are maintained on a per repository basis, and are basically key-value pairs. Once set, values cannot be read again, only overwritten. When the workflow is run, this SSH key is filled in to the environment variable <code class="language-plaintext highlighter-rouge">SSH_PRIVATE_KEY</code>.</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/github_secret.png" alt="Updating a GitHub secret" />
+  
+    <figcaption>
+      Updating a GitHub secret
+
+    </figcaption></figure>
+
+<p>The <code class="language-plaintext highlighter-rouge">ARGS</code> environment variable is the meat of the deployment workflow. It uses <a href="https://linux.die.net/man/1/rsync">rsync</a>, and in <code class="language-plaintext highlighter-rouge">ARGS</code> you can define the options to be passed to the <code class="language-plaintext highlighter-rouge">rsync</code> command, in this case:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-r</code> recurse into directories</li>
+  <li><code class="language-plaintext highlighter-rouge">-z</code> to compress files during the transfer</li>
+  <li><code class="language-plaintext highlighter-rouge">-v</code> for verbose output for easier debugging</li>
+  <li><code class="language-plaintext highlighter-rouge">--delete</code> to remove extraneous files in the destination directory (❗️important❗️)</li>
+  <li><code class="language-plaintext highlighter-rouge">--delete-excluded</code> to also remove excluded files in the destination directory</li>
+  <li><code class="language-plaintext highlighter-rouge">--chmod=g+rwx</code> to change permissions on the transferred files</li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">--delete</code> options are important, as we want to make sure that the destination directory on our web server contains only the files that <code class="language-plaintext highlighter-rouge">jekyll build</code> produced. If the previous version of the site for example contained some content that is now removed, we do not want that to stick around.
+The <code class="language-plaintext highlighter-rouge">--chmod</code> option might vary for your setup - but for me this was necessary as I wanted the group that technical user is part of also to have write access to the site contents.</p>
+
+<p>The rest of the environment variables are easier to understand. <code class="language-plaintext highlighter-rouge">SOURCE</code> defines the directory where the files to copy are - in this case the results of a <code class="language-plaintext highlighter-rouge">jekyll build</code> are (as is usual) placed in the <code class="language-plaintext highlighter-rouge">_site</code> directory. The <code class="language-plaintext highlighter-rouge">REMOTE_HOST</code> defines the host where to deploy files to - e.g. <code class="language-plaintext highlighter-rouge">swild.dev</code>. <code class="language-plaintext highlighter-rouge">REMOTE_USER</code> is the username with which to use SSH, and <code class="language-plaintext highlighter-rouge">REMOTE_TARGET</code> is the destination directory to <code class="language-plaintext highlighter-rouge">rsync</code> files to.</p>
+
+<h3 id="cloudflare-purge-cache">Cloudflare Purge Cache</h3>
+
+<p>This blog is proxied by Cloudflare, simply to speed the site up a little bit. The server hosting this site is also seriously underpowered, with a 2010-era processor (single core!) and a measly 2GB of RAM. While it does not take a lot of resources to host a static website (and it’s not like this blog gets many views…), Cloudflare is perfect for ensuring fast load times even when the user is far away from where you host the site.</p>
+
+<p>To ensure that everyone sees the same site content, we should purge the Cloudflare cache after a successful deployment so that for the first subsequent loads after Cloudflare will fetch the latest files from our origin web server. This can easily be done in the Cloudflare console, but it’s a lot more convenient to do via API 🤙</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/cloudflare_cache_purge.png" alt="Cloudflare purge cache button &amp; API" />
+  </figure>
+
+<p>For this I use Jake Jarvis’s <a href="https://github.com/jakejarvis/cloudflare-purge-action">cloudflare-purge-action</a>. It’s configuration is simple, although it requires some additional configuration on the Cloudflare side.</p>
+
+<p><code class="language-plaintext highlighter-rouge">CLOUDFLARE_ZONE</code> is the zone ID of your domain. This can be seen on the sidebar of the domain overview page, under the “API” header.</p>
+
+<p>While it’s possible to use your global API key, it’s recommended that you set up a restricted token, one that is locked to just the zones that you specify. You can create such a token by navigating to your Cloudflare profile then navigating to the “API Tokens” and tapping “Create Token”. Configuration will vary for you, but generally you want to do something like the following:</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/cloudflare_create_token.png" alt="Screenshot of how to create a API token in the Cloudflare control panel" />
+  </figure>
+
+<p>Note that the API token only has permissions to clear the cache for a very specific zone. That way if the key was compromised, all an attacker could do with the key is to clear the cache 😀</p>
+
+<h2 id="results">Results</h2>
+
+<p>After a not-so-insignificant time debugging permissions issues with the deployment workflow, I now have a pretty solid CI/CD pipeline. The checks &amp; actions implemented above allow me to work on the site from anywhere and any device (barring local preview, which requires Docker), and a simple push to master triggers a release deployment. Pretty cool, right? 👍</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/github_pr_checks.png" alt="Screenshot of successful GitHub Actions runs" />
+  </figure>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#ci-cd" class="page__taxonomy-item" rel="tag">CI/CD</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#github-actions" class="page__taxonomy-item" rel="tag">GitHub Actions</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">GitHub</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-08-22T00:00:00-05:00">August 22, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Setting+up+Automatic+Build+%26+Deploy+of+a+Jekyll+Blog%20http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-jekyll-build-deploy-action%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-jekyll-build-deploy-action%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-jekyll-build-deploy-action%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/self-hosting/github-spellcheck-lint-action/" class="pagination--pager" title="Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+">Previous</a>
+    
+    
+      <a href="/motorcycle/chain-sprocket-swap/" class="pagination--pager" title="390 Duke Chain and Sprocket Swap
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/motorcycle/chain-sprocket-swap/" rel="permalink">390 Duke Chain and Sprocket Swap
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Documenting my recent chain and sprocket swap
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-spellcheck-lint-action/" rel="permalink">Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/jekyll-blog-workflow/" rel="permalink">My Jekyll Workflow
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A look at my Jekyll blogging workflow 📝
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/local-jekyll/" rel="permalink">Running Jekyll with Docker
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I share how to set up a local Jekyll development environment using Docker.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Sebastian Wild. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

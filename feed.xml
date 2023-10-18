@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2023-10-17T23:37:44-05:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">The Start of a Blog</title><subtitle>A record of Sebastian's journey through the development world.</subtitle><author><name>Sebastian Wild</name></author><entry><title type="html">390 Duke Chain and Sprocket Swap</title><link href="http://0.0.0.0:4000/motorcycle/chain-sprocket-swap/" rel="alternate" type="text/html" title="390 Duke Chain and Sprocket Swap" /><published>2022-04-14T00:00:00-05:00</published><updated>2022-04-14T00:00:00-05:00</updated><id>http://0.0.0.0:4000/motorcycle/chain-sprocket-swap</id><content type="html" xml:base="http://0.0.0.0:4000/motorcycle/chain-sprocket-swap/">&lt;p&gt;Chain maintenance is one of the key regular maintenance items for every rider out there (well those of us with a chain-driven bike 😀). A complete chain swap however is done more infrequently, and some riders leave that to their professional mechanic. That’s fine and good, but once you understand the procedure and have some tools even people with two left hands like me can do it!&lt;/p&gt;
+
+&lt;h2 id=&quot;general-procedure&quot;&gt;General procedure&lt;/h2&gt;
+
+&lt;p&gt;Here’s the main steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Loosen front sprocket nut&lt;/li&gt;
+  &lt;li&gt;Break the original chain&lt;/li&gt;
+  &lt;li&gt;Remove the original chain&lt;/li&gt;
+  &lt;li&gt;Replace the front sprocket&lt;/li&gt;
+  &lt;li&gt;Remove the rear wheel&lt;/li&gt;
+  &lt;li&gt;Replace the rear sprocket&lt;/li&gt;
+  &lt;li&gt;Mount rear wheel&lt;/li&gt;
+  &lt;li&gt;Cut new chain to length&lt;/li&gt;
+  &lt;li&gt;Attach new chain&lt;/li&gt;
+  &lt;li&gt;Attach master link&lt;/li&gt;
+  &lt;li&gt;Adjust chain to spec&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So quite a few steps to be sure!&lt;/p&gt;
+
+&lt;h2 id=&quot;pre-requisites--tools&quot;&gt;Pre-requisites &amp;amp; tools&lt;/h2&gt;
+
+&lt;p&gt;You’ll definitively need some tools for this job - a Dremel and chain tool are highly recommended. Here’s a list of stuff that I used:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rear stand&lt;/li&gt;
+  &lt;li&gt;Socket wrench (+ appropriate sockets - check your manual/repair guide or eyeball what you need)&lt;/li&gt;
+  &lt;li&gt;Torque wrench&lt;/li&gt;
+  &lt;li&gt;Medium strength thread locker&lt;/li&gt;
+  &lt;li&gt;New chain&lt;/li&gt;
+  &lt;li&gt;New front and rear sprocket (optional but highly recommended!)&lt;/li&gt;
+  &lt;li&gt;Long-life grease&lt;/li&gt;
+  &lt;li&gt;Dremel with metal cutting attachment&lt;/li&gt;
+  &lt;li&gt;Chain Break/Press/Rivet tool (mine is from &lt;a href=&quot;https://www.motionpro.com/product/08-0470&quot;&gt;Motion Pro&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;understanding-modern-sealed-chains&quot;&gt;Understanding modern sealed chains&lt;/h2&gt;
+
+&lt;p&gt;You’ve most likely heard of O-ring, X-ring, and various other *-ring type chains - odds are your bike has one of these modern kinds of chains. The great benefit of these “sealed” type chains is that the factory-installed lubricant is sealed in by the o/x/z rings, meaning that they take less maintenance than unsealed type chains. The drawback is that sealed chains are more expensive.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_master_link.jpeg&quot; class=&quot;align-center&quot; title=&quot;Partially assembled rivet-type master link.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/6d93ce70b7674e33cf7d719a0920e9dd_500x375.jpeg&quot; alt=&quot;Anatomy of a rivet-type master link. Side plate and o-rings are shown.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;In the above figure of a master link, observe that lubricant has been applied to the x-rings as well as the pins. On standard factory links this is the same, but you won’t see the body of the pins since there is a roller above them. The same will be true for the master link as soon as we’ve inserted it into place.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-loosen-front-sprocket-nut&quot;&gt;1) Loosen front sprocket nut&lt;/h2&gt;
+
+&lt;p&gt;This step will differ from bike to bike. Some have a gigantic nut that will need to be loosened with a large breaker bar (if you’re unlucky). It’s important to loosen the front sprocket nut before removing the chain as we will use the chain to prevent the sprocket from turning. On the 390 Duke I got a little lucky though and the front sprocket is fastened by a clip held in place to the sprocket by two bolts which are not torqued down a lot. Regardless if your bike has a large front nut or a clip like mine does, a trick to prevent the front sprocket from rotating is to hold down the rear brake with some force - which prevents the rear wheel from turning an in turn also prevents the front sprocket from turning. It should be possible to do this by reaching around the bike with one hand, but if you need to use a breaker bar or impact wrench then having a buddy for this step is good.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_front_sprocket.jpeg&quot; class=&quot;align-center&quot; title=&quot;Front sprocket with old chain still attached&quot;&gt;
+          &lt;img src=&quot;/cache/resize/86751ea9b88576b9a2568102147854c9_500x375.jpeg&quot; alt=&quot;Front sprocket with old chain still attached, showing plate that locks the sprocket in place&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;On the Duke one simply has to remove the two bolts on either side of the shaft as shown above, slightly rotate the retaining bracket and it out.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-breaking-the-original-chain&quot;&gt;2) Breaking the original chain&lt;/h2&gt;
+
+&lt;p&gt;It’s &lt;strong&gt;very&lt;/strong&gt; helpful to have a chain tool and a Dremel. To help the chain breaker do its work you can use a Dremel with a metal cutting attachment in order to grind down the head of the pin to press.&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pbr_tool.jpeg&quot; class=&quot;&quot; title=&quot;Motion Pro PBR chain tool, assembled in the break position&quot;&gt;
+          &lt;img src=&quot;/cache/resize/3677ab85cb9b49c2644ecb4d57fc962c_300x400.jpeg&quot; alt=&quot;Motion Pro PBR chain tool, assembled in the break position&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_dremel_cutter.jpeg&quot; class=&quot;&quot; title=&quot;Dremel metal cutting attachment&quot;&gt;
+          &lt;img src=&quot;/cache/resize/1c4fd53e427e9f4b4ba916aff77ad0ef_300x400.jpeg&quot; alt=&quot;Dremel metal cutting attachment&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_after_dremel.jpeg&quot; class=&quot;&quot; title=&quot;Pin ground down after using the Dremel&quot;&gt;
+          &lt;img src=&quot;/cache/resize/afbbb259b5a3e314d35ec1a291f7602d_300x400.jpeg&quot; alt=&quot;Pin ground down after using the Dremel&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Note that in most cases the chain breaking tool also needs to be assembled depending on the desired function (check the instructions for your tool). The Motion Pro tool I used comes pre-assembled in the “Break” configuration as seen in the gallery above. The core idea is that, using sheer force, we will push a pin out and through the chain allowing it to be separated. The grinding down from the previous step will help the chain breaking tool do its work.&lt;/p&gt;
+
+&lt;p&gt;Various chain tools will have different components, but the principle is the same - the user will use a wrench to slowly turn an extractor bolt which will then force an extractor pin to push with &lt;strong&gt;a lot&lt;/strong&gt; of force on a single pin on the chain, slowly forcing it out.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;⚠️&lt;strong&gt;Before using the chain tool, read the manufacturer’s instructions&lt;/strong&gt;⚠️&lt;/p&gt;
+
+&lt;p&gt;Using the chain tool requires patience and a lot of alignment double checking. Generally if you have to use an excessive amount of force check if you’ve aligned everything correctly. When breaking the chain you will feel a large initial resistance which will then spontaneously get significantly easier - this is a sign that the head of the pin has been broken and that the pin is in the process of being pushed through. This will still take some effort, but it will be a consistent effort. However there are a few things to pay attention to as you mount the tool on the chain:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ensure that the extractor pin is recessed a few millimeters into the body bolt before tightening onto chain&lt;/li&gt;
+  &lt;li&gt;the anvil block has a little cutout where the other side of the pin fits into&lt;/li&gt;
+  &lt;li&gt;the body bolt should clamp hand tight onto the chain&lt;/li&gt;
+  &lt;li&gt;double check that the anvil block and body bolt align correctly with the chain pin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you’ve checked that, start rotating the extractor bolt and slowly push the pin out!&lt;/p&gt;
+
+&lt;p class=&quot;notice--primary&quot;&gt;It’s helpful to remove the tool once in the beginning just to check if the extraction is progressing smoothly.&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pbr_mounted.jpeg&quot; class=&quot;&quot; title=&quot;Mounted chain tool&quot;&gt;
+          &lt;img src=&quot;/cache/resize/c58341d63ca657c2aa516bb8da526a48_457x609.jpeg&quot; alt=&quot;Mounted chain tool with usage annotated instructions&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pbr_partial_process.jpeg&quot; class=&quot;&quot; title=&quot;Chain pin partially pushed through&quot;&gt;
+          &lt;img src=&quot;/cache/resize/e84c6dfd74f539b7b7a25afc058fb9d1_457x609.jpeg&quot; alt=&quot;Chain pin partially pushed through&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;3-removing-the-original-chain&quot;&gt;3) Removing the original chain&lt;/h3&gt;
+
+&lt;p&gt;Once the pin is extracted completely, you can simply remove the chain by pulling slowly on one end. It’ll look something like the below, note the extracted pin and o-rings.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_after_breaking.jpeg&quot; class=&quot;align-center&quot; title=&quot;No longer an endless chain 😀&quot;&gt;
+          &lt;img src=&quot;/cache/resize/4a11dfffe4865320f68a8e2e63cafebc_375x500.jpeg&quot; alt=&quot;Broken chain lying on cloth with separated link, o-rings, and extracted pin visible&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;4-replacing-the-front-sprocket&quot;&gt;4) Replacing the front sprocket&lt;/h3&gt;
+
+&lt;p&gt;Now that the chain is off, we can replace the front sprocket. As mentioned previously, the steps here will vary from bike to bike. On the 390 Duke, there are two small bolts that hold a retaining clip in place which needs to be rotated slightly. Only after being rotated will the “teeth” on the retaining clip align in a way that the clip can be pulled out. Once that’s done the front sprocket can simply be pulled off.&lt;/p&gt;
+
+&lt;p&gt;This is also a great opportunity to compare the old and worn front sprocket with your brand new one. Wear will be more easily seen on front sprockets as there are fewer teeth than the rear sprocket - where the wear and tear is more spread out. It should make sense now why the general recommendation is to replace chain and sprockets as a set - using a new chain on a worn sprocket will stress the chain more as it is forced into an existing wear pattern.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Replace sprockets and chains as a set!&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_front_sprocket_removed.jpeg&quot; class=&quot;&quot; title=&quot;Front sprocket removed&quot;&gt;
+          &lt;img src=&quot;/cache/resize/a63a43dc0113aeecefaedecdd4d4da24_300x400.jpeg&quot; alt=&quot;Shot of the front sprocket removed&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_front_sprocket_comparison.jpeg&quot; class=&quot;&quot; title=&quot;Comparison old and new front sprocket&quot;&gt;
+          &lt;img src=&quot;/cache/resize/088a4a5c8866f2346a4ba42f18d5dac6_300x400.jpeg&quot; alt=&quot;Comparing a worn front sprocket and a new front sprocket side by side. Wear on the old sprocket is clearly visible&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;It is also an excellent opportunity to clean around the chain guard and front sprocket!&lt;/p&gt;
+
+&lt;h3 id=&quot;5-removing-the-rear-wheel&quot;&gt;5) Removing the rear wheel&lt;/h3&gt;
+
+&lt;p&gt;The exact steps for this vary from bike to bike, but in general it involves the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Raising the bike with a rear stand&lt;/li&gt;
+  &lt;li&gt;(Possibly) removing the rear wheel speed sensor&lt;/li&gt;
+  &lt;li&gt;Removing the chain adjusters&lt;/li&gt;
+  &lt;li&gt;Pushing the wheel forward and removing the chain (if not already removed)&lt;/li&gt;
+  &lt;li&gt;While holding the wheel, removing the spindle/axle&lt;/li&gt;
+  &lt;li&gt;Pulling out the rear wheel&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_remove_wheel_speed_sensor.jpeg&quot; class=&quot;&quot; title=&quot;A pre-requisite of removing the wheel is to remove the rear wheel speed sensor&quot;&gt;
+          &lt;img src=&quot;/cache/resize/c96ae7c516422cbea0bd2584c1940165_300x400.jpeg&quot; alt=&quot;Rear wheel speed sensor in the process of being removed&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_remove_chain_adjusters.jpeg&quot; class=&quot;&quot; title=&quot;It is also necessary to remove the chain adjusters&quot;&gt;
+          &lt;img src=&quot;/cache/resize/a211747801f4f38422a6c68f5cdcca31_300x400.jpeg&quot; alt=&quot;Chain adjusters have been removed from the rear wheel spindle&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_spindle_removed.jpeg&quot; class=&quot;&quot; title=&quot;Once the spindle has been removed, the wheel can be pulled out of the bike&quot;&gt;
+          &lt;img src=&quot;/cache/resize/07454c90b47d4d93f251717c35af4d55_300x400.jpeg&quot; alt=&quot;Rear wheel with the spindle removed, shortly before being removed from the bike&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Once the wheel is removed you’ll have a bunch of bolts and other things lying around. A good trick to keep everything organized the way it was is to re-attach the spindle, adjusters, and nuts without the rear wheel.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_spindle_without_wheel.jpeg&quot; class=&quot;align-center&quot; title=&quot;You can keep things organized by mostly re-assembling the rear end - just without the wheel&quot;&gt;
+          &lt;img src=&quot;/cache/resize/77bd3eec53378ce8d45ce583b41fbd88_500x400.jpeg&quot; alt=&quot;Looking at the swing arm with spindle mounted back on the bike, but without the rear wheel&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;6-replacing-the-rear-sprocket&quot;&gt;6) Replacing the rear sprocket&lt;/h3&gt;
+
+&lt;p&gt;Replacing the rear sprocket is a relatively straightforward affair. It’s a matter of removing the existing bolts holding the old sprocket in place, swapping out the sprocket, and tightening the bolts down to the proper torque.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Tighten the sprocket bolts in a star pattern&lt;/p&gt;
+
+&lt;p class=&quot;notice--primary&quot;&gt;Check your owner’s or service manual if the sprocket bolts require threadlocker&lt;/p&gt;
+
+&lt;h4 id=&quot;quick-note-on-the-star-pattern&quot;&gt;Quick Note on the star pattern&lt;/h4&gt;
+
+&lt;p&gt;The “star pattern” is a way to tighten down sets of fasteners to ensure even torque and flatness of the item that’s being tightened against the surface it’s being tightened on. The process varies depending on how many fasteners are arranged on the item to be torqued down, but the general idea is to always go “across” when moving to the next fastener to tighten. Another core idea is to not immediately torque a fastener down to spec before moving on to the next, but to tighten gradually making multiple passes over each fastener in turn.&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_rear_sprocket_removed.jpeg&quot; class=&quot;&quot; title=&quot;Wheel with the rear sprocket removed&quot;&gt;
+          &lt;img src=&quot;/cache/resize/c66a4c6aef310e304764e126442afefc_300x400.jpeg&quot; alt=&quot;Wheel with the rear sprocket removed&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_rear_new_rear_sprocket.jpeg&quot; class=&quot;&quot; title=&quot;New rear sprocket placed on wheel&quot;&gt;
+          &lt;img src=&quot;/cache/resize/0376861047a075174cd24ae99001a681_300x400.jpeg&quot; alt=&quot;New rear sprocket placed on wheel, but not fastened&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_new_rear_sprocket_star_pattern.jpeg&quot; class=&quot;&quot; title=&quot;Torque the rear sprocket to spec in a star pattern as shown&quot;&gt;
+          &lt;img src=&quot;/cache/resize/726f8f57725d207140a5c5bab66cea94_300x400.jpeg&quot; alt=&quot;Rear sprocket being torqued down to spec&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;7-mount-the-rear-wheel&quot;&gt;7) Mount the rear wheel&lt;/h3&gt;
+
+&lt;p&gt;Re-mounting the rear wheel can be a bit tricky. It’s heavy and special attention needs to be paid so that the rear brake disk smoothly fits between the brake pads again. Again, read up on the instructions for your specific motorcycle. Generally there might be some spacers that need greasing, and the spindle/axle itself should be greased throughout (just making sure to avoid the threading on one end of the spindle). I use generic long-life waterproof grease. It’s also advisable to remove any grime you see.&lt;/p&gt;
+
+&lt;p&gt;The rough steps are as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grease any and all parts that need greasing (spindle, spacers, etc.)&lt;/li&gt;
+  &lt;li&gt;Attach any spacers to the wheel&lt;/li&gt;
+  &lt;li&gt;Lift the wheel, making sure that the brake disk smoothly slides between the brake pads. This will take some effort - the wheel is heavy!&lt;/li&gt;
+  &lt;li&gt;Mount the chain adjustment/alignment mechanism (along with any washers) on one end of the spindle&lt;/li&gt;
+  &lt;li&gt;Push the spindle through the swing arm and wheel, until it pokes through the other side of the swing arm&lt;/li&gt;
+  &lt;li&gt;Attach the other side’s chain adjustment/alignment mechanism&lt;/li&gt;
+  &lt;li&gt;Hand tighten the spindle with its nut - the chain still needs to be mounted and adjusted!&lt;/li&gt;
+  &lt;li&gt;Mount the rear wheel speed sensor&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--primary&quot;&gt;If you have trouble lifting the wheel - get a buddy or slide some planks of wood underneath for support&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_wheel_spacer.jpeg&quot; class=&quot;&quot; title=&quot;Spacers to the left and right of the wheel should be greased - they will turn slowly while riding.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/9d706bc02578f86a86fb7098b6d146c6_300x400.jpeg&quot; alt=&quot;Showing a greased wheel spacer&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_wheel_brake_pads.jpeg&quot; class=&quot;&quot; title=&quot;Make sure the brake disk fits nicely between the brake pads.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/07454c90b47d4d93f251717c35af4d55_300x400.jpeg&quot; alt=&quot;Showing the wheel in the middle of being mounted - the brake disk has just slid between the brake pads.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_wheel_spindle_pushed_through.jpeg&quot; class=&quot;&quot; title=&quot;The rear wheel spindle has been pushed through the swing arm and wheel. Next step is to attache the chain adjusters.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/a211747801f4f38422a6c68f5cdcca31_300x400.jpeg&quot; alt=&quot;Shows the rear wheel spindle having been pushed through the swing arm and wheel.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_remove_wheel_speed_sensor.jpeg&quot; class=&quot;&quot; title=&quot;Finally, attach the chain adjustor and rear wheel speed sensor. Hand tighten the spindle nut.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/c96ae7c516422cbea0bd2584c1940165_300x400.jpeg&quot; alt=&quot;Shows the chain adjustor and rear wheel speed sensor mounted.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;8-trimming-the-new-chain-to-length&quot;&gt;8) Trimming the new chain to length&lt;/h3&gt;
+
+&lt;p&gt;Chains come in standard lengths, like 112 links, 118, etc. Depending on your sprocket setup and motorcycle you might require a chain that’s different than the usual link counts. This naturally necessitates that the new chain be cut to length - a procedure identical to breaking the old chain.&lt;/p&gt;
+
+&lt;p&gt;However this is truly a “measure twice, cut once” situation as there isn’t a way to undo trimming the chain - I’ve never heard of someone lengthening chain by trying to use multiple master links 😂. To count the length of the chain, count each link individually. Unless you are also changing the sprocket tooth count the link count will be the same. You also might find it helpful to lay the old and new chain out next to each other so you can see exactly how many links to remove. Note however that the old chain, even with the same link count, will be slightly longer due to having stretched over its lifetime.&lt;/p&gt;
+
+&lt;p&gt;It’s helpful to have a stable platform when trimming the new chain. It is possible to do it off the bike of course, but I chose to mount the new chain and then trim it to the correct length.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_new_chain_mounted_before_trim.jpeg&quot; class=&quot;align-center&quot; title=&quot;The new chain is much too long - it needs to be cut to length&quot;&gt;
+          &lt;img src=&quot;/cache/resize/6cbeb6f39cbfea1d82f6413cc0256d34_500x400.jpeg&quot; alt=&quot;Showing the new chain mounted on the motorcycle. It is much too long and hangs loosely.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;9-mount-new-chain&quot;&gt;9) Mount new chain&lt;/h3&gt;
+
+&lt;p&gt;If you haven’t done so in the previous step - now is the time to do it. It’s as simple as feeding the chain through the front sprocket and laying it out on the rear sprocket like so:&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_new_chain_on_sprocket.jpeg&quot; class=&quot;align-center&quot;&gt;
+          &lt;img src=&quot;/cache/resize/6db4511a0af3a82a245dcad80bf18e6a_500x400.jpeg&quot; alt=&quot;The new chain is mounted and the two ends are visible on the rear sprocket.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;10-attach-master-link&quot;&gt;10) Attach master link&lt;/h3&gt;
+
+&lt;p&gt;This is where the process gets more interesting and a little more difficult. But before that, let’s go on a quick tangent and talk about the two types of master links.&lt;/p&gt;
+
+&lt;h4 id=&quot;rivet-vs-clip-type-master-links&quot;&gt;Rivet vs. clip type master links&lt;/h4&gt;
+
+&lt;p&gt;Right now our new chain has two ends that need to mated together to form an endless chain. This can be done with two kinds of so-called “master links” - rivet and clip type links. Clip type links are easier to use and feature a clip that will slide over the two chain pins preventing the side plate from coming off. Rivet type master links need to be riveted - that is the head of the pins on one end will be pressed out a little bit (kind of like a small mushroom) so they are wider at the end, ensuring that the side plate cannot come off.&lt;/p&gt;
+
+&lt;p&gt;Rivet type links are strongly recommended as once properly installed basically cannot come off. If the clip of a clip-type master links is removed (ex. because a rock strike), it’s possible that the side plate comes off while riding. This could result in the chain quite violently being ejected down the road behind you.&lt;/p&gt;
+
+&lt;h4 id=&quot;pressing&quot;&gt;Pressing&lt;/h4&gt;
+
+&lt;p&gt;No matter if you chose to use a clip type or rivet type master link, the first few steps are the same - starting with the pressing of the side plate onto the master link. Here’s the steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Thoroughly grease the master link pins and o-rings with (the likely provided) grease. This grease will be sealed in for the life of the chain.&lt;/li&gt;
+  &lt;li&gt;Slide the first pair of greased o-rings onto the pins of the master link&lt;/li&gt;
+  &lt;li&gt;Attach the master link to the chain, connecting the two ends&lt;/li&gt;
+  &lt;li&gt;Mount the greased second pair of o-rings onto the master link&lt;/li&gt;
+  &lt;li&gt;Mount the side plate making sure it is aligned well with the pins&lt;/li&gt;
+  &lt;li&gt;Press the side plate using a chain press tool&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The last step (6) is the tricky one. There are some things to pay attention to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Double-check that the side plate is aligned properly with the pins&lt;/li&gt;
+  &lt;li&gt;Press the side plate bit by bit, checking your progress as you go&lt;/li&gt;
+  &lt;li&gt;As the pin emerge through the side plate, check that your chain tool is not interfering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;⚠️ And perhaps most importantly: ⚠️&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Know the expected width of a link in the chain and only press the master link to meet that width&lt;/p&gt;
+
+&lt;p&gt;A too tight master link will be no good as it will have more bending resistance, leading to more heat, wear, and premature failure. Ideally use a precise caliper to measure other links on the chain and only press the side plate enough so the width is within a few tenths of a millimeter of the other links. The closer, the better. Remove your press tool often to check the width.&lt;/p&gt;
+
+&lt;p class=&quot;notice--primary&quot;&gt;The pressing will take some effort - if you’re not making progress double check alignment of your tool before applying more force&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;Metal expands - heat up the side plate to make the pressing effort easier!&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;Check the alignment of the o-rings on the opposite side of the master link. It should look even.&lt;/p&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_master_link.jpeg&quot; class=&quot;&quot; title=&quot;Partially assembled rivet-type master link. Note the liberally applied grease.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/6d93ce70b7674e33cf7d719a0920e9dd_300x400.jpeg&quot; alt=&quot;Anatomy of a rivet-type master link. Side plate and o-rings are shown.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_master_link_initial.jpeg&quot; class=&quot;&quot; title=&quot;The master link simply slides in to connect the ends of the chain.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/2fb7e4770cd577a61adb8afd1950b0b4_300x400.jpeg&quot; alt=&quot;Master link connecting the ends of the chain, o-rings and side plate are not attached yet.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_master_link_orings.jpeg&quot; class=&quot;&quot; title=&quot;Next, slide on the greased o-rings.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/558b3e9ed3473097074a2470ec8c0573_300x400.jpeg&quot; alt=&quot;Master link connecting the ends of the chain, o-rings are attached.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_master_link_sideplate_initial.jpeg&quot; class=&quot;&quot; title=&quot;Next, put the side plate over the master link pins.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/9418484fcf26e428600bbc84b2c9115d_300x400.jpeg&quot; alt=&quot;Master link connecting two ends of the chain, with partially attached side plate.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_process_middle.jpeg&quot; class=&quot;&quot; title=&quot;Next, start pressing the side plate down with your chain tool.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/ad45320f1dd143068731f9202a3dce56_300x400.jpeg&quot; alt=&quot;Showing a chain tool being used to press the side plate onto a master link.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_master_link_check_width.jpeg&quot; class=&quot;&quot; title=&quot;Know the width of the other links on the chain, and measure the width of the master link often as you are pressing.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/91ab4aa0fcf99e00d7ba6a0f9302860e_300x400.jpeg&quot; alt=&quot;Showing measuring a link on a chain using a digital caliper&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_pressing_master_link_completed.jpeg&quot; class=&quot;&quot; title=&quot;After pressing, the link should look somewhat like this. This one needs a fraction of a millimeter more pressing.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/ae2c141f9c4cc4a340ebe1b28759b3f6_300x400.jpeg&quot; alt=&quot;Shows the master link with pressed side plate.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;riveting&quot;&gt;Riveting&lt;/h4&gt;
+
+&lt;p&gt;Unlike clip-type master links, where the process pretty much ends at the last step, we have one more thing to do. Riveting is essentially expanding the tips of the pins so that the side plate cannot come off. The master link pins have a dimple that we’ll expand using our tool, which is going to take persistent force.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_rivet_tool.jpeg&quot; class=&quot;align-center&quot; title=&quot;Riveting in progress - if you look closely you can already tell that the top of the master link pin has expanded.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/eaca96f97af8c28675a5d42c39892006_500x400.jpeg&quot; alt=&quot;Shows the middle of the riveting process - the master link pins have noticeably expanded.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Once again, it’s very handy to have a caliper. A good rule of thumb is to expand the pins until they are about the same width as the factory riveted ones on the other link on the chain. I switched between the two pins, slowly expanding and measuring each in turn.&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_rivet_measure_link.jpeg&quot; class=&quot;align-center&quot; title=&quot;Measure a factory rivet to get a rough idea of the necessary diameter.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/4cb2b64b7391e64135e43fa691a95dce_300x400.jpeg&quot; alt=&quot;Shows a caliper being used to measure a factory riveted chain pin.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_rivet_measure_master_link.jpeg&quot; class=&quot;align-center&quot; title=&quot;Compare the factory rivet width with your rivet width.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/1d46998d478387eb02935ea749582c7f_300x400.jpeg&quot; alt=&quot;Shows a caliper being used to measure the riveting of the master link.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;It’s also important to check that the chain tool is properly aligned - some chain tools have a dimple on the other side of the riveting press that fits around the factory rivet on the other side of the master link.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-chain-adjustment--alignment&quot;&gt;11) Chain adjustment &amp;amp; alignment&lt;/h3&gt;
+
+&lt;p&gt;Congratulations, you’re almost done! The final step of course is adjusting the wheel and chain - you’ll want to ensure using the built-in chain adjusters or a chain alignment tool that the rear wheel is aligned with the front, as well that there is adequate chain slack. Chain slack will differ from bike to bike but it’s always better to have a slightly more loose chain rather than a too tight chain. Some more things to remember:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;As the swing arm compresses, chain slack will reduce (ex. when going over bumps)&lt;/li&gt;
+  &lt;li&gt;Check chain slack at multiple points along the chain - some spots may be tighter than others!&lt;/li&gt;
+  &lt;li&gt;A chain alignment tool can come in handy. I like &lt;a href=&quot;https://www.motionpro.com/product/08-0048&quot;&gt;this one&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tighten/loosen the chain adjusters one quarter rotation at a time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, tighten the chain adjusters and torque the spindle/axle nut.&lt;/p&gt;
+
+&lt;figure class=&quot; &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/chain_alignment_tool.jpeg&quot; class=&quot;align-center&quot; title=&quot;A chain alignment tool is a good help to more easily visualize alignment.&quot;&gt;
+          &lt;img src=&quot;/cache/resize/bff939c18ac7dba31e8d9ea85bbf96c2_500x400.jpeg&quot; alt=&quot;Shows a chain alignment tool mounted to the rear sprocket, with a straight rod pointing towards the front sprocket.&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;…And that’s it! Lube the chain and in the next thousand miles check chain slack more often than usual - new chains stretch a little bit early on.&lt;/p&gt;
+
+&lt;p&gt;This procedure likely took me several times the amount of time it would take a professional mechanic, but I gained a lot of understanding on how motorcycle chains work. I also now have more confidence in tackling something a little bigger than just oil and filter changes.&lt;/p&gt;
+
+&lt;p&gt;The most important thing here is to approach everything slowly and read the directions for your tools and service manual for your motorcycle. If something takes more force than you’re expecting, double check what you’re doing before applying even more force.&lt;/p&gt;
+
+&lt;p&gt;The biggest thing I noticed when going from my old and worn chain to the new one is just how much quieter it was. The old chain, even shortly after lubing, made quite a bit of noise. The new chain is significantly quieter even 300 miles after the last lube.&lt;/p&gt;</content><author><name>Sebastian Wild</name></author><category term="Motorcycle" /><category term="diy" /><category term="motorcycle" /><summary type="html">Documenting my recent chain and sprocket swap</summary></entry><entry><title type="html">Setting up Automatic Build &amp;amp; Deploy of a Jekyll Blog</title><link href="http://0.0.0.0:4000/self-hosting/github-jekyll-build-deploy-action/" rel="alternate" type="text/html" title="Setting up Automatic Build &amp;amp; Deploy of a Jekyll Blog" /><published>2020-08-22T00:00:00-05:00</published><updated>2020-08-22T00:00:00-05:00</updated><id>http://0.0.0.0:4000/self-hosting/github-jekyll-build-deploy-action</id><content type="html" xml:base="http://0.0.0.0:4000/self-hosting/github-jekyll-build-deploy-action/">&lt;p&gt;In the previous &lt;a href=&quot;/self-hosting/github-spellcheck-lint-action/&quot;&gt;post&lt;/a&gt; I demonstrated how to set up a spellcheck &amp;amp; lint action for a Jekyll powered site. The final piece in our GitHub actions automation puzzle is to build &amp;amp; deploy the site without having to do anything manually. The goal is to create the following actions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;On every pull request, run a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; to assert that the site can be build successfully ✅&lt;/li&gt;
+  &lt;li&gt;On every push to master, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; to produce the static site 📦&lt;/li&gt;
+  &lt;li&gt;On every push to master, deploy the site using SSH 🚀&lt;/li&gt;
+  &lt;li&gt;On every push to master, purge the Cloudflare cache 💨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just as before, I will be using GitHub actions.&lt;/p&gt;
+
+&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+
+&lt;p&gt;As of the time of writing, my blog is hosted on a web server controlled entirely by me. This means that deploying the site is as easy as copying files over SSH. Your setup may vary (and mine will certainly change as well - I always have plans for improvement 😀). You don’t have to do it the same way I do, here are some alternative ways to host a Jekyll site:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Amazon S3 (probably the cheapest for low traffic blogs)&lt;/li&gt;
+  &lt;li&gt;GitHub Pages (low entry barrier, very solid GitHub integration)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllthemes.io/resources/jekyll-hosting-and-cms-solutions&quot;&gt;Other platforms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For me this blog is more of a fun learning experience so I will go the 100% manual way. Of course manual does not mean repetitive, the goal still is to automate as much as possible. I just also want to write as much automation myself as is worthwhile 😛&lt;/p&gt;
+
+&lt;p&gt;Let’s get to it!&lt;/p&gt;
+
+&lt;h2 id=&quot;build-action&quot;&gt;Build Action&lt;/h2&gt;
+
+&lt;p&gt;The goal of this workflow is to build the Jekyll site, just to see if it’s successful or not. We will take care of the actual deployment in a later action, only to be performed when pushing to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. However it is still worthwhile to run a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; to ensure that the site can be built, and that Jekyll does not error out. This way we can ensure that code that is merged to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; will actually result in a site that at least compiles 😛&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Controls when the action will run. Triggers the workflow on push or pull request&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# events but only for the master branch&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# A workflow run is made up of one or more jobs that can run sequentially or in parallel&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Checkout&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v2&lt;/span&gt;
+
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SebasWild/jekyll-build-action@445d650279c45fd66c59ddd38620ddb30fceaedf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just like the last lint action, this one is pretty simple. Originally I was using Jerry van Leeuwen’s &lt;a href=&quot;jekyll-build-action&quot;&gt;jekyll-build-action&lt;/a&gt;, but I got some errors downloading the Ruby gems the site requires, so I forked the repository and modified the base docker image it used from the latest version of Jekyll to Jekyll 3.&lt;/p&gt;
+
+&lt;h2 id=&quot;deploy-action&quot;&gt;Deploy Action&lt;/h2&gt;
+
+&lt;p&gt;Arguable the most complex action (comparatively) for my blog is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deploy&lt;/code&gt; action, since it runs through several steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;SSH into the server &amp;amp; copy the generated files&lt;/li&gt;
+  &lt;li&gt;Purge Cloudflare cache&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This action took a bit of tweaking to get right, especially narrowing down the parameters required to correctly &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rsync&lt;/code&gt; all the files over to the server. Here’s the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Deploy&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;master&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build and deploy Jekyll Site&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Checkout&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v2&lt;/span&gt;
+
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SebasWild/jekyll-build-action@445d650279c45fd66c59ddd38620ddb30fceaedf&lt;/span&gt;
+
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Deploy to Server&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;easingthemes/ssh-deploy@v2.1.1&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;SSH_PRIVATE_KEY&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;ARGS&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;-rzv&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--delete&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--delete-excluded&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--chmod=g+rwx&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;SOURCE&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./_site/&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;REMOTE_HOST&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;REMOTE_USER&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;TARGET&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Purge Cloudflare Cache&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jakejarvis/cloudflare-purge-action@v0.3.0&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;CLOUDFLARE_ZONE&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;CLOUDFLARE_TOKEN&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;copy-phase&quot;&gt;Copy phase&lt;/h3&gt;
+
+&lt;p&gt;The first two workflow steps are the same as for the aforementioned build action - after that it gets more interesting. I use Dragan Filipović’s &lt;a href=&quot;https://github.com/easingthemes/ssh-deploy&quot;&gt;ssh-deploy&lt;/a&gt; which uses NodeJS to ssh and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rsync&lt;/code&gt; the built jekyll site files to my server. Notable here is the use of secrets - you definitively do not want to expose vital things like SSH keys to your server by having them in the code.&lt;/p&gt;
+
+&lt;p&gt;Instead of username/password authentication, it’s generally always recommended to use SSH keys (with a passphrase protected private key) with your server refusing password logons. This way you can only log on if you posses your private key and the server knows your public key. It can also be more convenient than username + password logon on since private keys do not necessarily have to be encrypted with a passphrase, so you could log on without typing anything in at all.&lt;/p&gt;
+
+&lt;p&gt;I make use of the above by storing such a private key in a GitHub secret - this SSH key allows the build action to log on to the server using a limited account with access only to the directory where the static files reside. Secrets are maintained on a per repository basis, and are basically key-value pairs. Once set, values cannot be read again, only overwritten. When the workflow is run, this SSH key is filled in to the environment variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSH_PRIVATE_KEY&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/github_secret.png&quot; alt=&quot;Updating a GitHub secret&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      Updating a GitHub secret
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ARGS&lt;/code&gt; environment variable is the meat of the deployment workflow. It uses &lt;a href=&quot;https://linux.die.net/man/1/rsync&quot;&gt;rsync&lt;/a&gt;, and in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ARGS&lt;/code&gt; you can define the options to be passed to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rsync&lt;/code&gt; command, in this case:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt; recurse into directories&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-z&lt;/code&gt; to compress files during the transfer&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-v&lt;/code&gt; for verbose output for easier debugging&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--delete&lt;/code&gt; to remove extraneous files in the destination directory (❗️important❗️)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--delete-excluded&lt;/code&gt; to also remove excluded files in the destination directory&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--chmod=g+rwx&lt;/code&gt; to change permissions on the transferred files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--delete&lt;/code&gt; options are important, as we want to make sure that the destination directory on our web server contains only the files that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; produced. If the previous version of the site for example contained some content that is now removed, we do not want that to stick around.
+The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--chmod&lt;/code&gt; option might vary for your setup - but for me this was necessary as I wanted the group that technical user is part of also to have write access to the site contents.&lt;/p&gt;
+
+&lt;p&gt;The rest of the environment variables are easier to understand. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SOURCE&lt;/code&gt; defines the directory where the files to copy are - in this case the results of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; are (as is usual) placed in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOTE_HOST&lt;/code&gt; defines the host where to deploy files to - e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;swild.dev&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOTE_USER&lt;/code&gt; is the username with which to use SSH, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOTE_TARGET&lt;/code&gt; is the destination directory to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rsync&lt;/code&gt; files to.&lt;/p&gt;
+
+&lt;h3 id=&quot;cloudflare-purge-cache&quot;&gt;Cloudflare Purge Cache&lt;/h3&gt;
+
+&lt;p&gt;This blog is proxied by Cloudflare, simply to speed the site up a little bit. The server hosting this site is also seriously underpowered, with a 2010-era processor (single core!) and a measly 2GB of RAM. While it does not take a lot of resources to host a static website (and it’s not like this blog gets many views…), Cloudflare is perfect for ensuring fast load times even when the user is far away from where you host the site.&lt;/p&gt;
+
+&lt;p&gt;To ensure that everyone sees the same site content, we should purge the Cloudflare cache after a successful deployment so that for the first subsequent loads after Cloudflare will fetch the latest files from our origin web server. This can easily be done in the Cloudflare console, but it’s a lot more convenient to do via API 🤙&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/cloudflare_cache_purge.png&quot; alt=&quot;Cloudflare purge cache button &amp;amp; API&quot; /&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;For this I use Jake Jarvis’s &lt;a href=&quot;https://github.com/jakejarvis/cloudflare-purge-action&quot;&gt;cloudflare-purge-action&lt;/a&gt;. It’s configuration is simple, although it requires some additional configuration on the Cloudflare side.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CLOUDFLARE_ZONE&lt;/code&gt; is the zone ID of your domain. This can be seen on the sidebar of the domain overview page, under the “API” header.&lt;/p&gt;
+
+&lt;p&gt;While it’s possible to use your global API key, it’s recommended that you set up a restricted token, one that is locked to just the zones that you specify. You can create such a token by navigating to your Cloudflare profile then navigating to the “API Tokens” and tapping “Create Token”. Configuration will vary for you, but generally you want to do something like the following:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/cloudflare_create_token.png&quot; alt=&quot;Screenshot of how to create a API token in the Cloudflare control panel&quot; /&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;Note that the API token only has permissions to clear the cache for a very specific zone. That way if the key was compromised, all an attacker could do with the key is to clear the cache 😀&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;After a not-so-insignificant time debugging permissions issues with the deployment workflow, I now have a pretty solid CI/CD pipeline. The checks &amp;amp; actions implemented above allow me to work on the site from anywhere and any device (barring local preview, which requires Docker), and a simple push to master triggers a release deployment. Pretty cool, right? 👍&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/github_pr_checks.png&quot; alt=&quot;Screenshot of successful GitHub Actions runs&quot; /&gt;
+  &lt;/figure&gt;</content><author><name>Sebastian Wild</name></author><category term="Self-hosting" /><category term="GitHub" /><category term="GitHub Actions" /><category term="CI/CD" /><category term="Self-hosting" /><category term="Jekyll" /><summary type="html">How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀</summary></entry><entry><title type="html">Setting up Jekyll Spellcheck &amp;amp; Linting using GitHub Actions</title><link href="http://0.0.0.0:4000/self-hosting/github-spellcheck-lint-action/" rel="alternate" type="text/html" title="Setting up Jekyll Spellcheck &amp;amp; Linting using GitHub Actions" /><published>2020-08-21T00:00:00-05:00</published><updated>2020-08-21T00:00:00-05:00</updated><id>http://0.0.0.0:4000/self-hosting/github-spellcheck-lint-action</id><content type="html" xml:base="http://0.0.0.0:4000/self-hosting/github-spellcheck-lint-action/">&lt;p&gt;It’s easy to make typos - even if you’re proofreading. For VS Code, there are some handy spellcheck extensions - I like to use &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker&quot;&gt;Code Spell Checker&lt;/a&gt;, but it’s good to have an additional check at the pull request step. I might be editing on a device where I do not have an integrated spell checker, for example. This is where the spellcheck action comes into play.&lt;/p&gt;
+
+&lt;p&gt;The same goes for maintaining good style when writing Markdown. It’s super common to use Linters when writing in an actual programming language, and at least according to my own experience this isn’t so common when using a markup language like Markdown. In a traditional programming language, linters are useful to enforce a consistent code style. In the case of Jekyll, it’s just a small additional check to ensure that we’re writing proper Markdown 😀&lt;/p&gt;
+
+&lt;h2 id=&quot;spellcheck-action&quot;&gt;Spellcheck Action&lt;/h2&gt;
+
+&lt;p&gt;For my GitHub Spellcheck workflow, I am using &lt;a href=&quot;https://github.com/rojopolis/spellcheck-github-actions&quot;&gt;Robert Jordan’s spellcheck-github-actions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;source&quot;&gt;Source&lt;/h3&gt;
+
+&lt;p&gt;You can configure your workflows in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github/workflows&lt;/code&gt; directory in your repository. They’re written in YAML. Let’s take a look at the code, then break it down 📝&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# .github/workflows/check_spelling.yml&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Spellcheck&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.js'&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.txt'&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.html'&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.md'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;spelling&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v2&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Check Spelling&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rojopolis/spellcheck-github-actions@v0.5.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first few lines of the workflow specify its name and the events that trigger it:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;/// ...&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# The name of your workflow. If you omit it, the file name will be used instead.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Spellcheck&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# The name of the event that triggers the workflow.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# This can be a single event, an array, or other advanced usage (refer to the docs).&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Ex. pull_request, push&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# The spellcheck workflow should trigger when a pull request is opened.&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# After all we want this to be a check/voter on if our PR can be merged.&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# We restrict the running of the workflow -&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# only run when Markdown files are changed.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.md'&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;/// ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The next section configures the jobs &amp;amp; steps per job to run. Jobs run in parallel by default, and in this case we only have one.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# A workflow can be made up of more than one job, running in parallel by default.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# In our case, we just have a spellcheck job&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;spelling&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# The machine the job runs on. In this case, the latest version of ubuntu.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# The sequence of steps to perform.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# A step can do anything from running commands to performing actions in your repository.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Specifies the action to run as as a step.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# This could be an action defined in your repository, from the marketplace, or even a Docker image.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# The checkout action checks out our repository so the spellcheck can access it&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v2&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# The name setting determines what the GitHub UI shows&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Check Spelling&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# We use rojopolis's spellcheck action, pinned to tag 0.5.0&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rojopolis/spellcheck-github-actions@v0.5.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that above, we specify that we want to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spellcheck-github-actions&lt;/code&gt; pinned to version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.5.0&lt;/code&gt;, rather than something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@master&lt;/code&gt; where you’d potentially get an update down the line that breaks your build. As an aside however, check out &lt;a href=&quot;https://julienrenaux.fr/2019/12/20/github-actions-security-risk/&quot;&gt;this&lt;/a&gt; really thought-provoking article on using other’s actions with your own code (and more importantly, secrets).&lt;/p&gt;
+
+&lt;p&gt;However we’re not done yet. The next section describes how to configure the spellcheck action.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+
+&lt;p&gt;Under the hood, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spelling-github-actions&lt;/code&gt; uses &lt;a href=&quot;https://facelessuser.github.io/pyspelling/&quot;&gt;PySpelling&lt;/a&gt;, which can be customized using a configuration file - typically called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.spellcheck.yml&lt;/code&gt;. Notice the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; prefix making it a hidden file. This is convenient as such a configuration file is typically “set and forget”. The excellent docs can be found &lt;a href=&quot;https://facelessuser.github.io/pyspelling/configuration/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mine looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Markdown&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;aspell&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;en&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;dictionary&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;wordlists&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.wordlist.txt&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;utf-8&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pipeline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pyspelling.filters.markdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pyspelling.filters.html&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ignores&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;code&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pre&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**/*.md'&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;default_encoding&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;utf-8&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;My configuration file is changed very little over the default that comes with the spellcheck action - pretty much the only thing that I’ve added is a custom whitelist of words. I’ve found that PySpelling produces a lot of false positives, especially with acronyms.&lt;/p&gt;
+
+&lt;p&gt;Most of the configuration is pretty self-explanatory, what’s interesting though is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipeline&lt;/code&gt; configuration. With the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyspelling.filters.markdown&lt;/code&gt; pipeline, the Markdown is converted into HTML. Subsequently the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyspelling.filters.html&lt;/code&gt; processes the HTML, filters out undesired tags, and then outputs the extracted text from the HTML tags to be spell checked.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sources&lt;/code&gt; option allows us to filter what files we want to spellcheck. It’s configured to check all Markdown files, no matter how deeply they are nested in subdirectories.&lt;/p&gt;
+
+&lt;p&gt;Finally, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wordlist.txt&lt;/code&gt; is simply a text file containing a list of words that will be ignored during the spellcheck process. Each word is on a new line.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/github_spellcheck_error.png&quot; alt=&quot;Screenshot of GitHub Actions output when the spellcheck fails.&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      Spellcheck errors are reported in the ‘Checks’ tab.
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;lint-action&quot;&gt;Lint Action&lt;/h2&gt;
+
+&lt;p&gt;Markdown is awesome for being able to create formatted documents using raw text, but it does have some syntax &amp;amp; formatting guidelines. Much like developers have linters to enforce code style practices, Markdown has this as well. For this I make use of Nick Osborn’s &lt;a href=&quot;https://github.com/nosborn/github-action-markdown-cli&quot;&gt;github-action-markdown-cli&lt;/a&gt;. In comparison to some of the other workflows this one is quite easy to configure:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# .github/workflows/check_spelling.yml&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Lint&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;pull_request&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;**.md'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;markdownlint-cli&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nosborn/github-action-markdown-cli@v1.1.1&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it for this one 😀&lt;/p&gt;</content><author><name>Sebastian Wild</name></author><category term="Self-hosting" /><category term="GitHub" /><category term="GitHub Actions" /><category term="CI/CD" /><category term="Self-hosting" /><category term="Jekyll" /><summary type="html">Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅</summary></entry><entry><title type="html">My Jekyll Workflow</title><link href="http://0.0.0.0:4000/self-hosting/jekyll-blog-workflow/" rel="alternate" type="text/html" title="My Jekyll Workflow" /><published>2020-08-19T00:00:00-05:00</published><updated>2020-08-19T00:00:00-05:00</updated><id>http://0.0.0.0:4000/self-hosting/jekyll-blog-workflow</id><content type="html" xml:base="http://0.0.0.0:4000/self-hosting/jekyll-blog-workflow/">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt; Any text editor + some GitHub branches tied together with GitHub Actions&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/self-hosting/local-jekyll/&quot;&gt;previous&lt;/a&gt; post, I described how to set up a local development environment for your Jekyll-powered site using Docker, including live reload. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; command is really helpful here because it lets us easily spin up a local web server to test our site - but this isn’t meant for production. To do it properly, we need to use a fully featured web server. However, I wanted to do more than just that - I wanted an end to end development &amp;amp; deployment pipeline:&lt;/p&gt;
+
+&lt;table class=&quot;td-like-ol&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;•&lt;/strong&gt; A fully portable development environment (using Docker)&lt;/td&gt;
+      &lt;td&gt;✅&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;•&lt;/strong&gt; Hassle-free setup for the live site on a VPS/cloud server&lt;/td&gt;
+      &lt;td&gt;✅&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;•&lt;/strong&gt; Automated linting&lt;/td&gt;
+      &lt;td&gt;✅&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;•&lt;/strong&gt; Automated spellcheck&lt;/td&gt;
+      &lt;td&gt;✅&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;•&lt;/strong&gt; Automated site build &amp;amp; deploy to live web server&lt;/td&gt;
+      &lt;td&gt;✅&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;workflow&quot;&gt;Workflow&lt;/h2&gt;
+
+&lt;p&gt;The diagram below shows how I work on the site and what happens at each stage of the process. In this post I will talk a little about each, but deep-dive posts on the individual GitHub Actions used will be reserved for some additional posts 👍&lt;/p&gt;
+
+&lt;svg class=&quot;adaptive-svg&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; viewBox=&quot;-0.5 -0.5 702 228&quot;&gt;
+  &lt;rect x=&quot;0&quot; y=&quot;106&quot; width=&quot;80&quot; height=&quot;40&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 46.25 143.48 C 47.02 143.48 47.56 143.23 47.41 143.03 L 45.88 141.13 C 45.68 140.84 45.41 140.78 44.96 140.78 L 35.04 140.78 C 34.56 140.78 34.32 140.85 34.08 141.14 L 32.66 143.02 C 32.39 143.32 33.21 143.48 33.81 143.48 Z M 69.4 137.3 L 69.4 109.48 L 10.56 109.48 L 10.56 137.3 Z M 4.14 146 C 2.57 145.99 1.17 145.55 0.58 144.86 C 0 144.19 0.23 143.52 0.73 143.06 L 6.43 138.17 L 6.43 109.33 C 6.43 107.88 7.97 106 10.53 106 L 69.42 106 C 71.41 106 73.53 107.34 73.53 109.51 L 73.53 138.17 L 79.28 143.1 C 79.77 143.57 80 144.18 79.42 144.84 C 78.66 145.68 77.23 145.94 75.88 146 Z&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 80 126 L 123.63 126&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 128.88 126 L 121.88 129.5 L 123.63 126 L 121.88 122.5 Z&quot; fill=&quot;#000000&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;rect class=&quot;adaptive-svg-rect&quot; x=&quot;130&quot; y=&quot;56&quot; width=&quot;380&quot; height=&quot;136&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;rect x=&quot;130&quot; y=&quot;192&quot; width=&quot;68&quot; height=&quot;34&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 66px; height: 1px; padding-top: 209px; margin-left: 131px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;GitHub&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;164&quot; y=&quot;213&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;GitHub&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;198&quot; y=&quot;56&quot; width=&quot;272&quot; height=&quot;34&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 198 56 M 470 56 M 470 90 L 198 90&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 270px; height: 1px; padding-top: 87px; margin-left: 199px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;master&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;334&quot; y=&quot;87&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;master&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 130 90 Q 140 90 164 90 Q 188 90 198.33 89.67&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;rect x=&quot;189.5&quot; y=&quot;90&quot; width=&quot;229.5&quot; height=&quot;34&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 189.5 90 M 419 90 M 419 124 L 189.5 124&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 227px; height: 1px; padding-top: 121px; margin-left: 191px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;staging&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;304&quot; y=&quot;121&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;staging&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 130 90 Q 140 90 159.75 107 Q 179.5 124 189.17 123.83&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;rect x=&quot;232&quot; y=&quot;124&quot; width=&quot;136&quot; height=&quot;34&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 232 124 M 368 124 M 368 158 L 232 158&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe flex-end; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 155px; margin-left: 233px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;post/draft##&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;300&quot; y=&quot;155&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;post/draft##&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 189.5 124 Q 199.5 124 210.75 141 Q 222 158 231.67 158&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 419 124 Q 429 124 444.5 107 Q 460 90 470 90&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 107px; margin-left: 460px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 11px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: nowrap;&quot;&gt; ✅&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;460&quot; y=&quot;111&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;11px&quot; text-anchor=&quot;middle&quot;&gt; ✅&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 368 158 Q 378 158 393.5 141 Q 409 124 419 124&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 142px; margin-left: 410px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 11px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: nowrap;&quot;&gt; ✅&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;410&quot; y=&quot;145&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;11px&quot; text-anchor=&quot;middle&quot;&gt; ✅&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 419 124 L 480.63 124&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 485.88 124 L 478.88 127.5 L 480.63 124 L 478.88 120.5 Z&quot; fill=&quot;#000000&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 453 90 L 480.45 90&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 485.7 90 L 478.7 93.5 L 480.45 90 L 478.7 86.5 Z&quot; fill=&quot;#000000&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;rect x=&quot;410&quot; y=&quot;146&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 159px; margin-left: 411px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;3.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;430&quot; y=&quot;162&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;3.&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 510 90 L 591.03 50.3&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 595.75 47.99 L 591 54.21 L 591.03 50.3 L 587.92 47.93 Z&quot; fill=&quot;#000000&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 590 146 C 566 146 560 166 579.2 170 C 560 178.8 581.6 198 597.2 190 C 608 206 644 206 656 190 C 680 190 680 174 665 166 C 680 150 656 134 635 142 C 620 130 596 130 590 146 Z&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 166px; margin-left: 561px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;Cloudflare&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;620&quot; y=&quot;170&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;Cloudflare&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 510 90 L 584.78 142.35&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;stroke&quot;/&gt;
+  &lt;path d=&quot;M 589.08 145.36 L 581.34 144.21 L 584.78 142.35 L 585.36 138.48 Z&quot; fill=&quot;#000000&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;rect x=&quot;530&quot; y=&quot;31&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 44px; margin-left: 531px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;deploy w/SSH&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;550&quot; y=&quot;47&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;deploy...&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;530&quot; y=&quot;128.5&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 531px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;purge cache&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;550&quot; y=&quot;145&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;purge c...&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;90&quot; y=&quot;128.5&quot; width=&quot;30&quot; height=&quot;10&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 134px; margin-left: 91px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;push&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;105&quot; y=&quot;137&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;push&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;path d=&quot;M 600 0 L 700 0 L 700 97 L 600 97 Z&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-miterlimit=&quot;10&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;path d=&quot;M 609.01 12.33 L 609.01 13.08 L 615.99 13.08 L 615.99 12.33 Z M 609.01 9.28 L 609.01 10.03 L 615.99 10.03 L 615.99 9.28 Z M 609.01 6.24 L 609.01 6.99 L 615.99 6.99 L 615.99 6.24 Z M 607.64 3.73 C 607.43 3.73 607.27 3.9 607.27 4.11 L 607.27 21.5 C 607.27 21.7 607.43 21.87 607.64 21.87 L 617.37 21.87 C 617.58 21.87 617.75 21.7 617.75 21.5 L 617.75 4.11 C 617.75 3.9 617.58 3.73 617.37 3.73 Z M 608.02 4.48 L 617 4.48 L 617 21.12 L 608.02 21.12 Z M 600 25 L 600 0 L 625 0 L 625 25 Z&quot; fill=&quot;#000000&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 68px; height: 1px; padding-top: 7px; margin-left: 632px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: left;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;
+            &lt;font&gt;Docker&lt;br/&gt;Traefik&lt;br/&gt;NGINX&lt;br/&gt;&lt;/font&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;632&quot; y=&quot;19&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot;&gt;Docker...&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;610&quot; y=&quot;72&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 85px; margin-left: 611px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;
+            &lt;i&gt;swild.dev&lt;/i&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;630&quot; y=&quot;88&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;swild.d...&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;130&quot; y=&quot;26&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 39px; margin-left: 131px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;2.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;150&quot; y=&quot;42&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;2.&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;20&quot; y=&quot;72&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 85px; margin-left: 21px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;1.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;40&quot; y=&quot;88&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;1.&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;490&quot; y=&quot;6&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 19px; margin-left: 491px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;4.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;510&quot; y=&quot;22&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;4.&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;rect x=&quot;520&quot; y=&quot;153.5&quot; width=&quot;40&quot; height=&quot;25&quot; fill=&quot;none&quot; pointer-events=&quot;all&quot;/&gt;
+  &lt;switch transform=&quot;translate(-0.5 -0.5)&quot;&gt;
+    &lt;foreignObject style=&quot;overflow: visible; text-align: left;&quot; pointer-events=&quot;none&quot; width=&quot;100%&quot; height=&quot;100%&quot; requiredFeatures=&quot;http://www.w3.org/TR/SVG11/feature#Extensibility&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 166px; margin-left: 521px;&quot;&gt;
+        &lt;div style=&quot;box-sizing: border-box; font-size: 0; text-align: center;&quot;&gt;
+          &lt;div style=&quot;display: inline-block; font-size: 12px; font-family: Helvetica; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;&quot;&gt;5.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/foreignObject&gt;
+    &lt;text x=&quot;540&quot; y=&quot;170&quot; fill=&quot;#000000&quot; font-family=&quot;Helvetica&quot; font-size=&quot;12px&quot; text-anchor=&quot;middle&quot;&gt;5.&lt;/text&gt;
+  &lt;/switch&gt;
+  &lt;switch&gt;
+    &lt;a transform=&quot;translate(0,-5)&quot; href=&quot;https://desk.draw.io/support/solutions/articles/16000042487&quot; target=&quot;_blank&quot;&gt;
+      &lt;text text-anchor=&quot;middle&quot; font-size=&quot;10px&quot; x=&quot;50%&quot; y=&quot;100%&quot;&gt;Viewer does not support full SVG 1.1&lt;/text&gt;
+    &lt;/a&gt;
+  &lt;/switch&gt;
+&lt;/svg&gt;
+
+&lt;p&gt;The diagram shows some key concepts important to me:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Write anywhere&lt;/li&gt;
+  &lt;li&gt;Robust version control strategy&lt;/li&gt;
+  &lt;li&gt;Robust automation&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;1-write-anywhere&quot;&gt;1. Write Anywhere&lt;/h2&gt;
+
+&lt;p&gt;While I typically do development work on my Mac, one of my goals was to make working on the site as easy as possible, and with the least amount of setup involved. Ideally using just a text editor and git. Building the site as well as deployment should be done by the CI/CD pipeline - so that I could for example use something like an iPad on the go. Of course a Ruby or Docker environment is needed for previewing the site locally, but for simply writing content I wanted to be able to use a tablet or phone on the go as well.&lt;/p&gt;
+
+&lt;p&gt;On my iPad, I use the following apps to develop the site on the go:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.textasticapp.com&quot;&gt;Textastic&lt;/a&gt; - I like this text editor as it features syntax highlighting and easy integration with Working Copy as well as Files.app&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://workingcopyapp.com&quot;&gt;Working Copy&lt;/a&gt; - Definitively not cheap, but a really good git client for iOS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://termius.com&quot;&gt;Terminus&lt;/a&gt; - Great SSH client for iOS &amp;amp; Android. The free version suits my basic SSH needs quite well&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/textastic_ipad.jpeg&quot; alt=&quot;Textastic on iPad&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      Working on an iPad with an keyboard &amp;amp; trackpad (thanks iOS 13.5 😀)
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;On my Mac, my go-to editor of choice is VS Code. Here are some handy extensions that made working on the site easier for me:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens&quot;&gt;GitLens&lt;/a&gt; - Adds a host of extra git features, such as per-line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git blame&lt;/code&gt; in the file you’re currently editing&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint&quot;&gt;markdownlint&lt;/a&gt; - Integrates MarkdownLint right into the editor, highlighting violations as you edit&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio&quot;&gt;Draw.io Integration&lt;/a&gt; - Lets you edit draw.io files right in VS Code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker&quot;&gt;Docker&lt;/a&gt; - Adds a slew of Docker integrations for editing Dockerfiles and managing containers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/vscode_drawio.png&quot; alt=&quot;VS Code with integrated draw.io&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      The draw.io (diagrams.net) extension for VS Code is pretty neat!
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;2-github-workflow&quot;&gt;2. GitHub Workflow&lt;/h2&gt;
+
+&lt;p&gt;A robust branching strategy is always a good thing in any repository. There’s tons of different approaches out there, but in general you want a strategy that allows you to work on features, bugfixes, and other things in isolation and without tripping over all the changes you are making in parallel. This means for example not pushing to master for everything but using feature branches. The strategy I’m following for the blog goes as follows:&lt;/p&gt;
+
+&lt;h3 id=&quot;master-branch&quot;&gt;master branch&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; is always the current live version of the site. This way if there hotfixes that need to be made, I can branch off of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;, fix the issue and open a pull request back into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;. GitHub Action build &amp;amp; deploy the site on push to this branch.&lt;/p&gt;
+
+&lt;h3 id=&quot;staging-branch&quot;&gt;staging branch&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; contains all the changes meant to go live in the next deploy. While I’m not using tags or versioning right now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; serves as the branch to contain all the changes that I want to deploy to the site in one go.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-branches&quot;&gt;feature branches&lt;/h3&gt;
+
+&lt;p&gt;Drafts for new posts, site features, and really anything else besides hotfixes are made in their own feature branches, typically created off of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt;. It’s good practice to have your feature branches be about one change, and one change only. Overcome the urge to work on multiple things in one feature branch. This might complicate the pull request once you’re done and make code review more difficult. This is not super applicable here as I am working on the site by myself, but is important when you are working in a team.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/github_branches.png&quot; alt=&quot;A look at some GitHub branches illustrating the workflow&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      GitHub branch setup with feature branches, pull requests, and checks.
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;3-github-actions&quot;&gt;3. GitHub Actions&lt;/h2&gt;
+
+&lt;p&gt;In August 2019, GitHub Actions gained CI/CD ability. What’s very cool about this is that if you want CI/CD for your project you no longer have to use a third party service. No more authorizing that third party to access your repositories - everything can now be done right within GitHub itself. This project was my first exposure to GitHub Actions and setting up some workflows.&lt;/p&gt;
+
+&lt;p&gt;For me, I wanted three main checks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check if the site builds with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Check for linter violations using MarkdownLint&lt;/li&gt;
+  &lt;li&gt;Check for spelling errors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These checks (with the exception of the deploy action), will happen on every pull request.
+I also wanted the site to be deployed to production on push to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt;. All of the above checks as well as the deploy are implemented with individual workflows, and I will go into each in the posts to follow 👍&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/github_actions_checks.png&quot; alt=&quot;Image of GitHub Actions running for a pull request.&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      Checks run on every pull request, and are required to pass before merging.
+
+    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Sebastian Wild</name></author><category term="Self-hosting" /><category term="Docker" /><category term="CI/CD" /><category term="Self-hosting" /><category term="Jekyll" /><summary type="html">A look at my Jekyll blogging workflow 📝</summary></entry><entry><title type="html">Running Jekyll with Docker</title><link href="http://0.0.0.0:4000/self-hosting/local-jekyll/" rel="alternate" type="text/html" title="Running Jekyll with Docker" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>http://0.0.0.0:4000/self-hosting/local-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/self-hosting/local-jekyll/">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt; I share how to create a highly portable jekyll development environment. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git-clone&lt;/code&gt; your website repository and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; 🚀&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Normally, Jekyll requires a full Ruby development environment. This isn’t hard to setup, and the steps are described &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;here&lt;/a&gt;. This is fine and good, but I wanted a fully portable environment without having to install Ruby or Bundler. For this I thought &lt;a href=&quot;https://www.docker.com&quot;&gt;Docker&lt;/a&gt; is a good solution. This way, the only thing that needs to be installed wherever I am working on the site is Docker itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;docker&quot;&gt;Docker&lt;/h2&gt;
+
+&lt;p&gt;Docker is a platform that uses virtualization to deliver software in packages called containers. These containers are significantly more lightweight than full-blown virtual machines, as &lt;a href=&quot;https://en.wikipedia.org/wiki/OS-level_virtualization&quot;&gt;OS-level virtualization&lt;/a&gt; is used.&lt;/p&gt;
+
+&lt;h2 id=&quot;docker-compose&quot;&gt;docker-compose&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose&lt;/code&gt; is a command-line utility to work with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files. Docker compose can be used to quickly define and run multi-container Docker applications with a single command and configuration file. A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file contains everything from image configuration, network configuration, and commands to run when the containers start.&lt;/p&gt;
+
+&lt;p&gt;Read more &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-docker-compose&quot;&gt;Jekyll docker-compose&lt;/h2&gt;
+
+&lt;p&gt;For my personal site, I want a local development environment that is highly portable - ideally as easy as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt;-ing the repository and running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;. That’s exactly what the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file below does 👍.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;                        &lt;span class=&quot;c1&quot;&gt;# docker-compose file format. Ex. 1, 2, or 3.&lt;/span&gt;
+                                    &lt;span class=&quot;c1&quot;&gt;# Different versions work with different versions of Docker, and support different features&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;                           &lt;span class=&quot;c1&quot;&gt;# Configs for the various services, we just have one&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll/jekyll:latest&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# Image name to pull from Docker Hub&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll serve --livereload&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# Command to run when the container starts&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4000:4000&lt;/span&gt;                   &lt;span class=&quot;c1&quot;&gt;# Map local port 4000 to port 4000 in the container&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;35729:35729&lt;/span&gt;                 &lt;span class=&quot;c1&quot;&gt;# We need to specify another port for the Jekyll 3.70+ live reload feature&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./src:/srv/jekyll&lt;/span&gt;           &lt;span class=&quot;c1&quot;&gt;# Mount a volume so the container can access local data in the src directory&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s break down the compose file.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt; mapping is where we define our containers. In YAML, a mapping is basically a collection of key:value pairs. We can call each container what we’d like, and in this case we only have one - “jekyll”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt; entry tells Docker what image to use. We could roll our own with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;, but there is a nice official Jekyll image available in &lt;a href=&quot;https://hub.docker.com/r/jekyll/jekyll/&quot;&gt;Docker Hub&lt;/a&gt; that we can use.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;With the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command&lt;/code&gt; entry, we can override the default command in the image.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ports&lt;/code&gt; sequence defines what ports to hook up from the container. The bundled web server in the image listens on port 4000, so we map this to our machine’s port 4000. We could choose a different one, ex: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3999:4000&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volumes&lt;/code&gt; sequence defines what persistent data to connect to the container and where to mount it. In this case, I have my Jekyll source files in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; subdirectory.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command&lt;/code&gt; entry a little more closely. We can see that it passing some arguments to the jekyll command line tool:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serve&lt;/code&gt; builds your site and serves it locally using bundled web server.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--livereload&lt;/code&gt; is very cool, it reloads your browser window when you make changes to your source files. Very handy for development.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;livereload&quot;&gt;Livereload&lt;/h3&gt;
+
+&lt;p&gt;Introduced with Jekyll 3.7.0, this feature will auto re-generate the pages corresponding with your edits, and trigger your browser window to refresh (should you be previewing the site). Without this, you would have to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--watch&lt;/code&gt; option and manually refresh the browser page to get the latest changes - but that’s one more click and you have to switch focus to your browser 😛 One thing to note though, at least on Safari I’ve found that when the page refreshes there’s a good chance that you lose your scroll position.&lt;/p&gt;
+
+&lt;p&gt;Also note that this feature works by injecting a new JavaScript file, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;livereload.js&lt;/code&gt;. This file listens for messages on port 35729, and will refresh the page when Jekyll re-generates a file. This is why we have to specify an extra port in our compose file.&lt;/p&gt;
+
+&lt;h2 id=&quot;workflow&quot;&gt;Workflow&lt;/h2&gt;
+
+&lt;p&gt;Typically when working on the site, I will have an editor (VS Code for me), and a browser pointing to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt; side by side. Starting work on the site is as simple as running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; 👍&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/self-hosting/LocalJekyll_SideBySide_Dev.jpg&quot; alt=&quot;VS Code and Jekyll served locally side by side&quot; /&gt;
+  &lt;/figure&gt;
+
+&lt;h2 id=&quot;closing-remarks&quot;&gt;Closing Remarks&lt;/h2&gt;
+
+&lt;p&gt;Note that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; is only meant for use for development purposes. The web server that it uses is not meant to handle multiple incoming requests, and should really not be used in production. For deployment, I’d recommend running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; and using a proper web server like NGINX or Apache to serve the site. I’ll have another post about this soon 😀&lt;/p&gt;</content><author><name>Sebastian Wild</name></author><category term="Self-hosting" /><category term="Docker" /><category term="Jekyll" /><summary type="html">I share how to set up a local Jekyll development environment using Docker.</summary></entry><entry><title type="html">Engine Noise? Might want to check your timing chain tensioner!</title><link href="http://0.0.0.0:4000/motorcycle/cam-chain-tensioner/" rel="alternate" type="text/html" title="Engine Noise? Might want to check your timing chain tensioner!" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>http://0.0.0.0:4000/motorcycle/cam-chain-tensioner</id><content type="html" xml:base="http://0.0.0.0:4000/motorcycle/cam-chain-tensioner/">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt; If you motorcycle engine starts making funny, loud ticking noises, you might want to check your timing chain tensioner.&lt;/p&gt;
+
+&lt;p&gt;I own a KTM 390 Duke that I love dearly. It’s light, has good power for its size, and is super fun to flick around in corners. Yet especially the earlier models (mine is a ‘16) do not - according to some people - have the best reputation when it comes to reliability. I’ve only put ~10k miles on my bike and up until now no real repairs were needed besides the usual oil changes, valve adjustments, etc.&lt;/p&gt;
+
+&lt;p&gt;Some weeks back as I was getting off the highway I started hearing what I at first thought was a faulty exhaust from the car in front of me. I was stopped at a light and what I was hearing sounded a lot like an exhaust leak - as if something had rattled loose and let some gases escape. After another few seconds of riding though it became obvious that this wasn’t coming from anyone around me, but from my bike. Luckily I was quite close to home and was able to quickly take a look.&lt;/p&gt;
+
+&lt;h2 id=&quot;initial-troubleshooting&quot;&gt;Initial Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;When you spend a lot of time doing something, whether it’d be motorcycle riding or really any other activity you get used to how things behave, sound, and feel. If something is off, you can realize it pretty quickly. After getting off the bike and putting my ear to the engine I could immediately tell that something was just not right - and to be quite frank it scared the hell out of me. I recorded what I was hearing so I could send it to a buddy of mine:&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/y97m7XAnRBg&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Looking at that video it sounds nothing like an exhaust leak - it’s quite obvious that there is a lot of ticking going on. In person however, it sounded a lot different. After verifying that the exhaust system did not seem to have any loose parts or stray holes there really were only two things left that I figure might be the culprit:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Out of spec valves&lt;/li&gt;
+  &lt;li&gt;Super loose timing chain&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The valves were adjusted somewhat recently, and so I decided to check out potential culprit #2 first.&lt;/p&gt;
+
+&lt;h2 id=&quot;examining-the-timing-chain-tensioner&quot;&gt;Examining the Timing Chain Tensioner&lt;/h2&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;As a prerequisite, make sure your engine is at top dead center. If this is not the case, you could risk the engine jumping timing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On the 390 Duke, removing the tensioner is simple. Remove the screw marked in step 1, noting that there is an O-ring underneath. Then, remove the two screws marked in step 2. Finally, you can take out the tensioner and its gasket.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_removal.jpeg&quot; alt=&quot;Shows steps to remove the cam chain tensioner from the engine&quot; /&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;Once taken out, the tensioner looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_side.jpeg&quot;&gt;
+        &lt;img src=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_side.jpeg&quot; alt=&quot;Cam chain tensioner lying down&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_standing.jpeg&quot;&gt;
+        &lt;img src=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_standing.jpeg&quot; alt=&quot;Cam chain tensioner standing upright&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+&lt;/figure&gt;
+
+&lt;p&gt;Let’s look at its function a little more closely.&lt;/p&gt;
+
+&lt;h2 id=&quot;replacing-the-tensioner&quot;&gt;Replacing the Tensioner&lt;/h2&gt;
+
+&lt;p&gt;The stock tensioner is an automatic, spring based tensioner. It features a little tensioning rod (pictured above) that exerts pressure on a guide rail inside the engine (not pictured) in order to tension the timing chain. The purpose of the timing chain is to synchronize the rotation of the camshaft with the crankshaft - making sure that valves open &amp;amp; close exactly when needed. A loose timing chain could result in jumped timing, which will cause the engine to not perform the precise sequence of events to complete a four-stroke combustion cycle, or worse grenade the engine.&lt;/p&gt;
+
+&lt;p&gt;The tensioner in the 390 Duke is essentially on or off - either the spring pushes the tensioner out, or the tensioner is “locked” all the way in. Proper operation can be verified with the tensioner still in the bike by doing the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;With a flat-head screwdriver, turn the adjustor bolt (#2 - hard to see) clockwise (#3) until you can’t anymore. This is the lock point.&lt;/li&gt;
+  &lt;li&gt;Remove the screwdriver. Note that the tensioner is now at its shortest length.&lt;/li&gt;
+  &lt;li&gt;“Unlock” the tensioner by using the flat-head screwdriver to nudge the adjustor bolt counterclockwise (#4) ~ a quarter turn. You should feel pressure on your screwdriver as the spring engages.&lt;/li&gt;
+  &lt;li&gt;Remove the screwdriver, and the spring will extend the tensioner until hit hits the timing chain guide - you’ll hear a small clack.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;It is possible to over-extend the tensioner by rotating counterclockwise after its automatic spring-based tension!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/motorcycle/390duke_cam_chain_tensioner_adjustment.jpeg&quot; alt=&quot;Checking the tensioner's function&quot; /&gt;
+  &lt;/figure&gt;
+
+&lt;p&gt;In my case the issue quickly became obvious. In step 1 above, I noticed that there was no tension on my screwdriver at all the as spring had completely failed. As such, the timing chain was at its loosest setting - hence the noise. I ordered an OEM replacement and installed it like so:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Bring the tensioner to the locked position as described in step 1 above.&lt;/li&gt;
+  &lt;li&gt;Place a gasket to sit between the engine and the tensioner.&lt;/li&gt;
+  &lt;li&gt;Insert the tensioner, making sure to orient it correctly.&lt;/li&gt;
+  &lt;li&gt;Mount and tighten the screws with the correct torque values.&lt;/li&gt;
+  &lt;li&gt;Like in step 3. above, unlock the timing chain tensioner. You should faintly hear it impact the guide inside the engine.&lt;/li&gt;
+  &lt;li&gt;Mount and tighten the cover screw along with its O-ring.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In my case, this immediately made the horrible noises I was hearing go away, and I knew I had found the root cause ✅&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;While the concept of timing chains &amp;amp; their tensioners is not motorcycle specific, the steps described in this post are. They are probably similar for other bikes, but I would always recommend following your owner’s manual. It is also very much worthwhile to get a repair manual for your motorcycle as those go much more in depth than an owner’s manual.&lt;/p&gt;
+
+&lt;p&gt;There are also manual timing chain tensioners. Instead of being spring powered, they are manually adjustable. Some people prefer those as they are simpler and more reliable.&lt;/p&gt;</content><author><name>Sebastian Wild</name></author><category term="Motorcycle" /><category term="diy" /><category term="repair" /><category term="motorcycle" /><summary type="html">Ticking noises in your engine could be due to a faulty timing chain tensioner.</summary></entry><entry><title type="html">Starting a Self-hosted Blog</title><link href="http://0.0.0.0:4000/self-hosting/starting-a-self-hosted-blog/" rel="alternate" type="text/html" title="Starting a Self-hosted Blog" /><published>2020-02-02T00:00:00-06:00</published><updated>2020-02-02T00:00:00-06:00</updated><id>http://0.0.0.0:4000/self-hosting/starting-a-self-hosted-blog</id><content type="html" xml:base="http://0.0.0.0:4000/self-hosting/starting-a-self-hosted-blog/">&lt;p&gt;Testing&lt;/p&gt;
+
+&lt;p&gt;I’m a professional iOS developer - most of the web development world is unknown to me. I have done some small projects at work with SAPUI5, but I have to admin I was never really good at it. But, I think any good developer should know a little bit of everything, and that includes diving into some web development. A lot of developers also have blogs and personal sites hosted on places like Medium or GitHub pages. So, I wanted to get my feet wet - but rather than hosting on GitHub pages or writing posts on Medium, I wanted to self-host all the way.&lt;/p&gt;
+
+&lt;p&gt;I knew I wanted to start off with a static site using Jekyll. Jekyll caters super well to blogs, with tons of readily available themes and markdown-powered posting. It’s a good way for me to start my web learning journey 👍.&lt;/p&gt;
+
+&lt;p&gt;I also knew that I wanted to self-host. Something like GitHub pages is enticing, and super quick to set up. But by self-hosting, I can learn some more about setting up a web server, a good CI/CD pipeline, linting, and server hardening.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;I spent some time planning what I wanted my web stack to look like, but as this project goes on odds are some of this will change 😀
+As I figure out &amp;amp; create my site, I will write some blogs detailing the entire setup ✅&lt;/p&gt;
+
+&lt;h2 id=&quot;key-components&quot;&gt;Key Components&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;: Static website generator to be used for the content of the site.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;: Will run Jekyll &amp;amp; a web server in a container for easy local environment and production deployment.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt;: Probably a DigitalOcean droplet or cheap dedicated server.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CI/CD&lt;/strong&gt;: GitHub actions to build, lint, and deploy the site automatically.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CDN&lt;/strong&gt;: Cloudflare to provide a speedy site.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-by-step-blog-series&quot;&gt;Step by Step Blog Series&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Sneaky edit months later…&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I explain how to run a local development environment: &lt;a href=&quot;/self-hosting/local-jekyll/&quot;&gt;Running Jekyll with Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I describe my development GitHub &amp;amp; mobile development workflow: &lt;a href=&quot;/self-hosting/jekyll-blog-workflow/&quot;&gt;My Jekyll Workflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Showing how to set up spellcheck and linting actions: &lt;a href=&quot;/self-hosting/github-spellcheck-lint-action/&quot;&gt;Setting up Jekyll Spellcheck &amp;amp; Linting using GitHub Actions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Setting up automated build &amp;amp; deploy of a Jekyll site: &lt;a href=&quot;/self-hosting/github-jekyll-build-deploy-action/&quot;&gt;Setting up Automatic Build &amp;amp; Deploy of a Jekyll Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sebastian Wild</name></author><category term="Self-hosting" /><category term="Docker" /><category term="Self-hosting" /><category term="CI/CD" /><category term="Jekyll" /><summary type="html">Kicking off the blog series on how I develop &amp; host this very website 😎</summary></entry></feed>

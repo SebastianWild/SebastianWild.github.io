@@ -1,0 +1,737 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- begin _includes/seo.html --><title>Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions - The Start of a Blog</title>
+<meta name="description" content="Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅">
+
+
+  <meta name="author" content="Sebastian Wild">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Start of a Blog">
+<meta property="og:title" content="Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions">
+<meta property="og:url" content="http://0.0.0.0:4000/self-hosting/github-spellcheck-lint-action/">
+
+
+  <meta property="og:description" content="Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-08-21T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/self-hosting/github-spellcheck-lint-action/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sebastian Wild",
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Start of a Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/mmistakes_light.css" id="sheet_light">
+<link rel="stylesheet" href="/assets/css/mmistakes_dark.css" id="sheet_dark" media="none">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+  
+    <script src="/assets/js/themeswitch.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="theme--light layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          The Start of a Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/about/me_small.jpg" alt="Sebastian Wild" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sebastian Wild</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Enthusiast of all things 📲, 🏍, 🚲, ⛰, and ⛷</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">SF Bay Area</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions">
+    <meta itemprop="description" content="Quick guide to setting up a spellcheck &amp; MarkdownLint GitHub Actions ✅">
+    <meta itemprop="datePublished" content="August 21, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Setting up Jekyll Spellcheck &amp; Linting using GitHub Actions
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>It’s easy to make typos - even if you’re proofreading. For VS Code, there are some handy spellcheck extensions - I like to use <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>, but it’s good to have an additional check at the pull request step. I might be editing on a device where I do not have an integrated spell checker, for example. This is where the spellcheck action comes into play.</p>
+
+<p>The same goes for maintaining good style when writing Markdown. It’s super common to use Linters when writing in an actual programming language, and at least according to my own experience this isn’t so common when using a markup language like Markdown. In a traditional programming language, linters are useful to enforce a consistent code style. In the case of Jekyll, it’s just a small additional check to ensure that we’re writing proper Markdown 😀</p>
+
+<h2 id="spellcheck-action">Spellcheck Action</h2>
+
+<p>For my GitHub Spellcheck workflow, I am using <a href="https://github.com/rojopolis/spellcheck-github-actions">Robert Jordan’s spellcheck-github-actions</a>.</p>
+
+<h3 id="source">Source</h3>
+
+<p>You can configure your workflows in the <code class="language-plaintext highlighter-rouge">.github/workflows</code> directory in your repository. They’re written in YAML. Let’s take a look at the code, then break it down 📝</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .github/workflows/check_spelling.yml</span>
+
+<span class="na">name</span><span class="pi">:</span> <span class="s">Spellcheck</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.js'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.txt'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.html'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.md'</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">spelling</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Check Spelling</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">rojopolis/spellcheck-github-actions@v0.5.0</span>
+</code></pre></div></div>
+
+<p>The first few lines of the workflow specify its name and the events that trigger it:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">/// ...</span>
+<span class="c1"># The name of your workflow. If you omit it, the file name will be used instead.</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Spellcheck</span>
+<span class="c1"># The name of the event that triggers the workflow.</span>
+<span class="c1"># This can be a single event, an array, or other advanced usage (refer to the docs).</span>
+<span class="c1"># Ex. pull_request, push</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="c1"># The spellcheck workflow should trigger when a pull request is opened.</span>
+  <span class="c1"># After all we want this to be a check/voter on if our PR can be merged.</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="c1"># We restrict the running of the workflow -</span>
+    <span class="c1"># only run when Markdown files are changed.</span>
+    <span class="na">paths</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.md'</span>
+<span class="s">/// ...</span>
+</code></pre></div></div>
+
+<p>The next section configures the jobs &amp; steps per job to run. Jobs run in parallel by default, and in this case we only have one.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># A workflow can be made up of more than one job, running in parallel by default.</span>
+<span class="c1"># In our case, we just have a spellcheck job</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">spelling</span><span class="pi">:</span>
+    <span class="c1"># The machine the job runs on. In this case, the latest version of ubuntu.</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="c1"># The sequence of steps to perform.</span>
+    <span class="c1"># A step can do anything from running commands to performing actions in your repository.</span>
+    <span class="na">steps</span><span class="pi">:</span>
+    <span class="c1"># Specifies the action to run as as a step.</span>
+    <span class="c1"># This could be an action defined in your repository, from the marketplace, or even a Docker image.</span>
+    <span class="c1"># The checkout action checks out our repository so the spellcheck can access it</span>
+    <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+    <span class="c1"># The name setting determines what the GitHub UI shows</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Check Spelling</span>
+      <span class="c1"># We use rojopolis's spellcheck action, pinned to tag 0.5.0</span>
+      <span class="na">uses</span><span class="pi">:</span> <span class="s">rojopolis/spellcheck-github-actions@v0.5.0</span>
+</code></pre></div></div>
+
+<p>Note that above, we specify that we want to use the <code class="language-plaintext highlighter-rouge">spellcheck-github-actions</code> pinned to version <code class="language-plaintext highlighter-rouge">0.5.0</code>, rather than something like <code class="language-plaintext highlighter-rouge">@master</code> where you’d potentially get an update down the line that breaks your build. As an aside however, check out <a href="https://julienrenaux.fr/2019/12/20/github-actions-security-risk/">this</a> really thought-provoking article on using other’s actions with your own code (and more importantly, secrets).</p>
+
+<p>However we’re not done yet. The next section describes how to configure the spellcheck action.</p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>Under the hood, <code class="language-plaintext highlighter-rouge">spelling-github-actions</code> uses <a href="https://facelessuser.github.io/pyspelling/">PySpelling</a>, which can be customized using a configuration file - typically called <code class="language-plaintext highlighter-rouge">.spellcheck.yml</code>. Notice the <code class="language-plaintext highlighter-rouge">.</code> prefix making it a hidden file. This is convenient as such a configuration file is typically “set and forget”. The excellent docs can be found <a href="https://facelessuser.github.io/pyspelling/configuration/">here</a>.</p>
+
+<p>Mine looks like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">matrix</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Markdown</span>
+  <span class="na">aspell</span><span class="pi">:</span>
+    <span class="na">lang</span><span class="pi">:</span> <span class="s">en</span>
+  <span class="na">dictionary</span><span class="pi">:</span>
+    <span class="na">wordlists</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">.wordlist.txt</span>
+    <span class="na">encoding</span><span class="pi">:</span> <span class="s">utf-8</span>
+  <span class="na">pipeline</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">pyspelling.filters.markdown</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">pyspelling.filters.html</span><span class="pi">:</span>
+    <span class="na">comments</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">ignores</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">code</span>
+    <span class="pi">-</span> <span class="s">pre</span>
+  <span class="na">sources</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s1">'</span><span class="s">**/*.md'</span>
+  <span class="na">default_encoding</span><span class="pi">:</span> <span class="s">utf-8</span>
+</code></pre></div></div>
+
+<p>My configuration file is changed very little over the default that comes with the spellcheck action - pretty much the only thing that I’ve added is a custom whitelist of words. I’ve found that PySpelling produces a lot of false positives, especially with acronyms.</p>
+
+<p>Most of the configuration is pretty self-explanatory, what’s interesting though is the <code class="language-plaintext highlighter-rouge">pipeline</code> configuration. With the <code class="language-plaintext highlighter-rouge">pyspelling.filters.markdown</code> pipeline, the Markdown is converted into HTML. Subsequently the <code class="language-plaintext highlighter-rouge">pyspelling.filters.html</code> processes the HTML, filters out undesired tags, and then outputs the extracted text from the HTML tags to be spell checked.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">sources</code> option allows us to filter what files we want to spellcheck. It’s configured to check all Markdown files, no matter how deeply they are nested in subdirectories.</p>
+
+<p>Finally, the <code class="language-plaintext highlighter-rouge">wordlist.txt</code> is simply a text file containing a list of words that will be ignored during the spellcheck process. Each word is on a new line.</p>
+
+<figure class="">
+  <img src="/assets/images/self-hosting/github_spellcheck_error.png" alt="Screenshot of GitHub Actions output when the spellcheck fails." />
+  
+    <figcaption>
+      Spellcheck errors are reported in the ‘Checks’ tab.
+
+    </figcaption></figure>
+
+<h2 id="lint-action">Lint Action</h2>
+
+<p>Markdown is awesome for being able to create formatted documents using raw text, but it does have some syntax &amp; formatting guidelines. Much like developers have linters to enforce code style practices, Markdown has this as well. For this I make use of Nick Osborn’s <a href="https://github.com/nosborn/github-action-markdown-cli">github-action-markdown-cli</a>. In comparison to some of the other workflows this one is quite easy to configure:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># .github/workflows/check_spelling.yml</span>
+
+<span class="na">name</span><span class="pi">:</span> <span class="s">Lint</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">**.md'</span>
+<span class="na">jobs</span><span class="pi">:</span>
+    <span class="na">markdownlint-cli</span><span class="pi">:</span>
+        <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+        <span class="na">steps</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">nosborn/github-action-markdown-cli@v1.1.1</span>
+          <span class="na">with</span><span class="pi">:</span>
+            <span class="na">files</span><span class="pi">:</span> <span class="s">.</span>
+</code></pre></div></div>
+
+<p>And that’s it for this one 😀</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#ci-cd" class="page__taxonomy-item" rel="tag">CI/CD</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#github-actions" class="page__taxonomy-item" rel="tag">GitHub Actions</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">GitHub</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">Jekyll</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#self-hosting" class="page__taxonomy-item" rel="tag">Self-hosting</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-08-21T00:00:00-05:00">August 21, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Setting+up+Jekyll+Spellcheck+%26+Linting+using+GitHub+Actions%20http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-spellcheck-lint-action%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-spellcheck-lint-action%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fself-hosting%2Fgithub-spellcheck-lint-action%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/self-hosting/jekyll-blog-workflow/" class="pagination--pager" title="My Jekyll Workflow
+">Previous</a>
+    
+    
+      <a href="/self-hosting/github-jekyll-build-deploy-action/" class="pagination--pager" title="Setting up Automatic Build &amp; Deploy of a Jekyll Blog
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/motorcycle/chain-sprocket-swap/" rel="permalink">390 Duke Chain and Sprocket Swap
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Documenting my recent chain and sprocket swap
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/github-jekyll-build-deploy-action/" rel="permalink">Setting up Automatic Build &amp; Deploy of a Jekyll Blog
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to use GitHub Actions to build &amp; deploy your Jekyll blog to your server 🚀
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/jekyll-blog-workflow/" rel="permalink">My Jekyll Workflow
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A look at my Jekyll blogging workflow 📝
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/self-hosting/local-jekyll/" rel="permalink">Running Jekyll with Docker
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I share how to set up a local Jekyll development environment using Docker.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:contact@swild.dev" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://twitter.com/SebRWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/SebasWild" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/sebastian_the_wild/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Sebastian Wild. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
